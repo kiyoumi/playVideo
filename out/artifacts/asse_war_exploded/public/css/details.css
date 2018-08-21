@@ -1,0 +1,464 @@
+@charset "UTF-8";
+/*电影详情*/
+.movie-details-box {
+  width: 100%; }
+  .movie-details-box .movie-content {
+    width: 1100px;
+    margin: 0 auto; }
+    .movie-details-box .movie-content .movie-name .biao {
+      width: 5px;
+      height: 30px;
+      background: #AB242B;
+      float: left;
+      margin-top: 17px; }
+    .movie-details-box .movie-content .movie-name p {
+      margin-left: 10px;
+      color: #555;
+      font-size: 22px;
+      padding: 15px 0; }
+      .movie-details-box .movie-content .movie-name p .year {
+        font-size: 16px;
+        margin-left: 10px;
+        color: #888; }
+    .movie-details-box .movie-content .movie-name .border1 {
+      content: '';
+      top: 50px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      z-index: 1;
+      background: -webkit-linear-gradient(left, rgba(186, 186, 186, 0) 0, #bababa 0%, #bababa 80%, rgba(186, 186, 186, 0) 100%); }
+    .movie-details-box .movie-content .movie-details {
+      padding-top: 20px;
+      height: 400px; }
+      .movie-details-box .movie-content .movie-details .movie-img {
+        width: 250px;
+        float: left;
+        position: relative; }
+        .movie-details-box .movie-content .movie-details .movie-img img {
+          width: 100%;
+          height: 375px;
+          display: block; }
+        .movie-details-box .movie-content .movie-details .movie-img .sign {
+          position: absolute;
+          width: 100%;
+          background: rgba(0, 0, 0, 0.4);
+          color: #fff;
+          bottom: 0px;
+          font-size: 14px; }
+          .movie-details-box .movie-content .movie-details .movie-img .sign span {
+            display: block;
+            padding: 5px 10px; }
+    .movie-details-box .movie-content .content-list {
+      position: relative;
+      float: left;
+      margin-left: 20px;
+      font-size: 14px;
+      color: #666;
+      width: 800px;
+      height: 100%; }
+      .movie-details-box .movie-content .content-list .f-50 {
+        display: inline-block;
+        width: 49%; }
+      .movie-details-box .movie-content .content-list .grade span {
+        color: #FFD309; }
+        .movie-details-box .movie-content .content-list .grade span .score {
+          font-weight: bold;
+          font-size: 20px;
+          margin-left: 10px;
+          color: #EB242B; }
+          .movie-details-box .movie-content .content-list .grade span .score .score-s {
+            font-size: 16px; }
+      .movie-details-box .movie-content .content-list a {
+        color: #1C7BF0;
+        text-decoration: none; }
+        .movie-details-box .movie-content .content-list a:hover {
+          text-decoration: underline; }
+      .movie-details-box .movie-content .content-list .play a {
+        padding: 5px 10px;
+        background: #2B8AE0;
+        color: #f2f2f2;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 2px; }
+        .movie-details-box .movie-content .content-list .play a:hover {
+          background: #1C7BF0;
+          color: #fff; }
+      .movie-details-box .movie-content .content-list .play .collect {
+        background: #AB242B;
+        cursor: pointer; }
+        .movie-details-box .movie-content .content-list .play .collect:hover {
+          background: #BB242B; }
+      .movie-details-box .movie-content .content-list .add-to-favorites span {
+        display: block;
+        font-size: 20px;
+        position: absolute;
+        right: 20px;
+        bottom: 0; }
+        .movie-details-box .movie-content .content-list .add-to-favorites span i {
+          font-size: 25px;
+          margin-right: 10px; }
+  .movie-details-box .more-recommend {
+    width: 1100px;
+    margin: 20px auto; }
+    .movie-details-box .more-recommend .recommend-tit {
+      font-size: 20px;
+      color: #555; }
+      .movie-details-box .more-recommend .recommend-tit .biao {
+        float: left;
+        width: 5px;
+        height: 30px;
+        background: #AB242B; }
+      .movie-details-box .more-recommend .recommend-tit p {
+        margin-left: 10px; }
+    .movie-details-box .more-recommend .border1 {
+      content: '';
+      top: 50px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      z-index: 1;
+      background: -webkit-linear-gradient(left, rgba(186, 186, 186, 0) 0, #bababa 0%, #bababa 80%, rgba(186, 186, 186, 0) 100%); }
+    .movie-details-box .more-recommend .recommend-movie {
+      padding-bottom: 20px;
+      padding-top: 20px; }
+      .movie-details-box .more-recommend .recommend-movie ul {
+        list-style: none; }
+        .movie-details-box .more-recommend .recommend-movie ul li {
+          border-radius: 2px;
+          display: inline-block;
+          margin-right: 12px;
+          background: #fff;
+          width: 14.4%;
+          padding: 5px 5px 0px 5px;
+          position: relative;
+          margin-bottom: 15px; }
+          .movie-details-box .more-recommend .recommend-movie ul li:hover {
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); }
+          .movie-details-box .more-recommend .recommend-movie ul li a {
+            width: 100%;
+            text-decoration: none;
+            color: #666; }
+            .movie-details-box .more-recommend .recommend-movie ul li a .movie-img {
+              position: relative;
+              width: 100%; }
+              .movie-details-box .more-recommend .recommend-movie ul li a .movie-img img {
+                width: 100%;
+                height: 238px;
+                display: block; }
+          .movie-details-box .more-recommend .recommend-movie ul li .movie-name {
+            font-size: 14px;
+            padding: 5px 0px; }
+          .movie-details-box .more-recommend .recommend-movie ul li:hover .movie-name {
+            color: #EB242B; }
+      .movie-details-box .more-recommend .recommend-movie ul li:last-child {
+        margin: 0px; }
+
+/*电视剧详情*/
+.tele-details-box {
+  width: 100%; }
+  .tele-details-box .tele-content {
+    width: 1100px;
+    margin: 0 auto; }
+    .tele-details-box .tele-content .tele-name .biao {
+      width: 5px;
+      height: 30px;
+      background: #AB242B;
+      float: left;
+      margin-top: 15px; }
+    .tele-details-box .tele-content .tele-name p {
+      margin-left: 20px;
+      color: #555;
+      font-size: 22px;
+      padding: 15px 0; }
+      .tele-details-box .tele-content .tele-name p .year {
+        font-size: 16px;
+        margin-left: 10px;
+        color: #888; }
+    .tele-details-box .tele-content .tele-name .border1 {
+      content: '';
+      top: 50px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      z-index: 1;
+      background: -webkit-linear-gradient(left, rgba(186, 186, 186, 0) 0, #bababa 0%, #bababa 80%, rgba(186, 186, 186, 0) 100%); }
+    .tele-details-box .tele-content .tele-details {
+      padding-top: 20px;
+      height: 400px; }
+      .tele-details-box .tele-content .tele-details .tele-img {
+        width: 250px;
+        float: left;
+        position: relative; }
+        .tele-details-box .tele-content .tele-details .tele-img img {
+          width: 100%;
+          height: 375px;
+          display: block; }
+        .tele-details-box .tele-content .tele-details .tele-img .sign {
+          position: absolute;
+          width: 100%;
+          background: rgba(0, 0, 0, 0.4);
+          color: #fff;
+          bottom: 0px;
+          font-size: 14px; }
+          .tele-details-box .tele-content .tele-details .tele-img .sign span {
+            display: block;
+            padding: 5px 10px; }
+    .tele-details-box .tele-content .content-list {
+      position: relative;
+      float: left;
+      margin-left: 20px;
+      font-size: 14px;
+      color: #666;
+      width: 800px;
+      height: 100%; }
+      .tele-details-box .tele-content .content-list .f-50 {
+        display: inline-block;
+        width: 49%; }
+      .tele-details-box .tele-content .content-list .grade span {
+        color: #FFD309; }
+        .tele-details-box .tele-content .content-list .grade span .score {
+          font-weight: bold;
+          font-size: 20px;
+          margin-left: 10px;
+          color: #EB242B; }
+          .tele-details-box .tele-content .content-list .grade span .score .score-s {
+            font-size: 16px; }
+      .tele-details-box .tele-content .content-list a {
+        color: #1C7BF0;
+        text-decoration: none; }
+        .tele-details-box .tele-content .content-list a:hover {
+          text-decoration: underline; }
+      .tele-details-box .tele-content .content-list .play a {
+        padding: 5px 10px;
+        background: #2B8AE0;
+        color: #f2f2f2;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 2px; }
+        .tele-details-box .tele-content .content-list .play a:hover {
+          background: #1C7BF0;
+          color: #fff; }
+      .tele-details-box .tele-content .content-list .play .collect {
+        background: #AB242B;
+        cursor: pointer; }
+        .tele-details-box .tele-content .content-list .play .collect:hover {
+          background: #BB242B;
+          color: #fff; }
+      .tele-details-box .tele-content .content-list .add-to-favorites span {
+        display: block;
+        font-size: 20px;
+        position: absolute;
+        right: 20px;
+        bottom: 0; }
+        .tele-details-box .tele-content .content-list .add-to-favorites span i {
+          font-size: 25px;
+          margin-right: 10px; }
+  .tele-details-box .episode-list {
+    width: 1100px;
+    margin: 20px auto; }
+    .tele-details-box .episode-list .episode-tit {
+      font-size: 20px;
+      color: #555; }
+      .tele-details-box .episode-list .episode-tit .biao {
+        float: left;
+        width: 5px;
+        height: 30px;
+        background: #AB242B; }
+      .tele-details-box .episode-list .episode-tit p {
+        margin-left: 10px; }
+    .tele-details-box .episode-list .border1 {
+      content: '';
+      top: 50px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      z-index: 1;
+      background: -webkit-linear-gradient(left, rgba(186, 186, 186, 0) 0, #bababa 0%, #bababa 80%, rgba(186, 186, 186, 0) 100%); }
+    .tele-details-box .episode-list .select-l {
+      margin-top: 20px; }
+      .tele-details-box .episode-list .select-l ul {
+        list-style: none; }
+        .tele-details-box .episode-list .select-l ul .active {
+          background: #cB242B;
+          color: #fff;
+          border: 1px solid #8C131C; }
+        .tele-details-box .episode-list .select-l ul li {
+          width: 80px;
+          height: 20px;
+          display: inline-block;
+          border: 1px solid #b2b2b2;
+          border-radius: 2px;
+          margin-right: 10px;
+          cursor: pointer;
+          line-height: 20px;
+          text-align: center;
+          font-size: 14px; }
+          .tele-details-box .episode-list .select-l ul li:not(.active):hover {
+            border: 1px solid #cB242B;
+            color: #cB242B; }
+    .tele-details-box .episode-list .select-s {
+      margin-top: 20px; }
+      .tele-details-box .episode-list .select-s ul {
+        list-style: none; }
+        .tele-details-box .episode-list .select-s ul li {
+          width:79px;
+          height: 30px;
+          display: inline-block;
+          border: 1px solid #b2b2b2;
+          border-radius: 2px;
+          margin-right: 10px;
+          margin-bottom: 10px; }
+          .tele-details-box .episode-list .select-s ul li:hover {
+            background: #cB242B;
+            border: 1px solid #8C131C; }
+          .tele-details-box .episode-list .select-s ul li:hover a {
+            color: #fff; }
+          .tele-details-box .episode-list .select-s ul li a {
+            text-decoration: none;
+            line-height: 30px;
+            text-align: center;
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 16px;
+            color: #cB242B;
+            font-weight: bold; }
+    .tele-details-box .episode-list .variety-list {
+      margin-top: 20px; }
+      .tele-details-box .episode-list .variety-list ul {
+        list-style: none; }
+        .tele-details-box .episode-list .variety-list ul li {
+          display: inline-block;
+          width: 359px;
+          height: 40px;
+          margin: 0 5px 5px 0;
+          position: relative; }
+          .tele-details-box .episode-list .variety-list ul li a {
+            display: block;
+            text-indent: 10px;
+            width: 357px;
+            height: 38px;
+            line-height: 38px;
+            background: #fff;
+            border: 1px solid #ccc;
+            color: #333;
+            font-size: 12px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none; }
+            .tele-details-box .episode-list .variety-list ul li a span {
+              margin-right: 10px; }
+            .tele-details-box .episode-list .variety-list ul li a:hover {
+              border: 1px solid #cB242B;
+              color: #cB242B; }
+  .tele-details-box .more-recommend {
+    width: 1100px;
+    margin: 20px auto; }
+    .tele-details-box .more-recommend .recommend-tit {
+      font-size: 20px;
+      color: #555; }
+      .tele-details-box .more-recommend .recommend-tit .biao {
+        float: left;
+        width: 5px;
+        height: 30px;
+        background: #AB242B; }
+      .tele-details-box .more-recommend .recommend-tit p {
+        margin-left: 10px; }
+    .tele-details-box .more-recommend .border1 {
+      content: '';
+      top: 50px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      z-index: 1;
+      background: -webkit-linear-gradient(left, rgba(186, 186, 186, 0) 0, #bababa 0%, #bababa 80%, rgba(186, 186, 186, 0) 100%); }
+    .tele-details-box .more-recommend .recommend-tele {
+      padding-bottom: 20px;
+      padding-top: 20px; }
+      .tele-details-box .more-recommend .recommend-tele ul {
+        list-style: none; }
+        .tele-details-box .more-recommend .recommend-tele ul li {
+          border-radius: 2px;
+          display: inline-block;
+          margin-right: 12px;
+          background: #fff;
+          width: 14.4%;
+          padding: 5px 5px 0px 5px;
+          position: relative;
+          margin-bottom: 15px; }
+          .tele-details-box .more-recommend .recommend-tele ul li:hover {
+            background: #e0e0e0; }
+          .tele-details-box .more-recommend .recommend-tele ul li a {
+            width: 100%;
+            text-decoration: none;
+            color: #666; }
+            .tele-details-box .more-recommend .recommend-tele ul li a .tele-img {
+              position: relative;
+              width: 100%; }
+              .tele-details-box .more-recommend .recommend-tele ul li a .tele-img img {
+                width: 100%;
+                height: 238px;
+                display: block; }
+          .tele-details-box .more-recommend .recommend-tele ul li .tele-name {
+            font-size: 14px;
+            padding: 5px 0; }
+            .tele-details-box .more-recommend .recommend-tele ul li .tele-name p{
+              font-weight: bold;
+              font-size: 13px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          .tele-details-box .more-recommend .recommend-tele ul li:hover .tele-name {
+            color: #EB242B; }
+      .tele-details-box .more-recommend .recommend-tele ul li:last-child {
+        margin: 0; }
+
+/*搜索结果*/
+.search-result-box {
+  width: 100%; }
+  .search-result-box .search-result {
+    width: 1100px;
+    margin: 0 auto; }
+    .search-result-box .search-result .result-tit {
+      padding: 20px 0px; }
+      .search-result-box .search-result .result-tit .biao {
+        width: 3px;
+        height: 20px;
+        background: #cB242B;
+        float: left;
+        margin-top: 5px; }
+      .search-result-box .search-result .result-tit p {
+        margin-left: 10px;
+        color: #666;
+        font-size: 20px; }
+        .search-result-box .search-result .result-tit p em {
+          font-weight: bold;
+          color: #cB242B; }
+      .search-result-box .search-result .result-tit .border1 {
+        content: '';
+        width: 100%;
+        height: 1px;
+        z-index: 1;
+        background: -webkit-linear-gradient(left, rgba(186, 186, 186, 0) 0, #bababa 0%, #bababa 80%, rgba(186, 186, 186, 0) 100%); }
+
+.publish a {
+  cursor: pointer; }
+
+.commentYes {
+  background: #CB242B;
+  font-size: 14px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  position: absolute;
+  top: 50px;
+  left: 45%;
+  display: none; }
+
+/*# sourceMappingURL=details.css.map */

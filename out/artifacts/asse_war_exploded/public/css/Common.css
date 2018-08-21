@@ -1,0 +1,1901 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 12px/1.5 Arial, "hiragino sans gb", "microsoft yahei", "simsun", Helvetica, sans-serif;
+  background: #F2F2F5; }
+.displayNone {
+  display: none;
+}
+.f {
+  float: left; }
+
+.r {
+  float: right; }
+
+.pl-5 {
+  padding-left: 5px; }
+
+.pl-10 {
+  padding-left: 10px; }
+
+.pl-15 {
+  padding-left: 15px; }
+
+.pl-20 {
+  padding-left: 20px; }
+
+.pl-25 {
+  padding-left: 25px; }
+
+.pl-30 {
+  padding-left: 30px; }
+
+.pt-5 {
+  padding-top: 5px; }
+
+.pt-10 {
+  padding-top: 10px; }
+
+.pt-15 {
+  padding-top: 15px; }
+
+.pt-20 {
+  padding-top: 20px; }
+
+.pt-25 {
+  padding-top: 25px; }
+
+.pt-30 {
+  padding-top: 30px; }
+
+.ml-5 {
+  margin-left: 5px; }
+
+.ml-10 {
+  margin-left: 10px; }
+
+.ml-15 {
+  margin-left: 15px; }
+
+.ml-20 {
+  margin-left: 20px; }
+
+.ml-30 {
+  margin-left: 30px; }
+
+.ml-40 {
+  margin-left: 40px; }
+
+.mt-5 {
+  margin-top: 5px; }
+
+.mt-10 {
+  margin-top: 10px; }
+
+.mt-15 {
+  margin-top: 15px; }
+
+.mt-20 {
+  margin-top: 20px; }
+
+.mt-25 {
+  margin-top: 25px; }
+
+.mt-30 {
+  margin-top: 30px; }
+
+.mt-40 {
+  margin-top: 40px; }
+
+.ml-5 {
+  margin-left: 5px; }
+
+.ml-10 {
+  margin-left: 10px; }
+
+.ml-15 {
+  margin-left: 15px; }
+
+.ml-20 {
+  margin-left: 20px; }
+
+.ml-25 {
+  margin-left: 25px; }
+
+.top {
+  height: 50px; }
+
+/*头部区域*/
+header {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 99; }
+header .head {
+  top: 0;
+  height: 84px;
+  max-width: 1200px;
+  min-width: 1100px;
+  margin: 0 auto; }
+header .head .search_box {
+  width: 27%;
+  height: 100%; }
+header .head .search_box .search {
+  border: 1px solid #D2D2D2;
+  width:75%;
+  margin-left: 20%;
+  margin-top: 22px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #fff; }
+header .head .search_box input {
+  padding: 10px 5px;
+  border: none;
+  height: 100%;
+  width: 84%;
+  font-size: 14px; }
+header .head .search_box input:focus {
+  outline: none; }
+header .head .search_box a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #666;
+  text-decoration: none; }
+header .head .search_box a:hover {
+  color: #cB242B }
+header .head .logo_area {
+  width: 24%;
+  height: 100%;
+  text-align: right; }
+header .head h1 {
+  height: 64px;
+  padding-top: 10px; }
+header .head h1 a img{
+  height: 64px;
+}
+header .head .my_center {
+  width: 36.3%;
+  height: 100%; }
+header .head .my_center .login_ {
+  line-height: 84px;
+  color: #666;
+  text-decoration: none;
+  font-size: 14px; }
+header .head .my_center .nickname{
+  line-height: 84px;
+  color: #666;
+  text-decoration: none;
+  font-size: 14px; }
+header .head .my_center #userLogout{
+  display: inline-block;
+  margin-left: 12px; }
+header .head .my_center .login_:hover {
+  color: #cB242B; }
+header .head .language{
+  height: 100%;
+  line-height: 84px;
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+  width: 12.67%;
+  text-align: right;
+}
+header .head .language a:hover{
+  color:#cB242B;
+}
+header .head .language a.active{
+  padding: 4px 10px;
+  background:#cB242B;
+  color: #fff;
+}
+header .head .ml-40 .Hui-iconfont-user2,header .head .ml-30 .Hui-iconfont-shijian,header .head .ml-30 .Hui-iconfont-cang2{
+  font-size: 25px;
+  color: #cB242B;
+}
+
+.header-bottom {
+  position: fixed;
+  top: 84px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  line-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  text-align: center;
+  z-index: 99;
+  background-color: #cB242B;
+  background: -webkit-linear-gradient(left, #59cc18 0, #0fa6ea 10%, #9c242b 60%, #cb242b 100%);
+  background: -ms-linear-gradient(left, #59cc18 0, #0fa6ea 10%, #9c242b 60%, #cb242b 100%);
+  background: linear-gradient(left, #59cc18 0, #0fa6ea 10%, #9c242b 60%, #cb242b 100%); }
+
+/*导航区域*/
+nav .nav {
+  position: fixed;
+  _position: absolute;
+  top: 87px;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  height: 45px;
+  padding-top: 3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  background-color: rgba(247, 247, 247, 0.82); }
+nav .nav .nav-main {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 44px;
+  width: 1100px;
+  margin: 0 auto; }
+nav .nav .nav-main em {
+  line-height: 44px;
+  color: #bbb;
+  float: left;
+  padding: 0 10px; }
+nav .nav .nav-main ul {
+  list-style: none;
+  float: left; }
+nav .nav .nav-main ul.demand .ColumnsGrade{
+  position: relative;
+  display: inline-block;
+}
+nav .nav .nav-main ul.demand #subject-list{
+  display: none;
+  width: 142px;
+  top: 134px;
+  position: fixed;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #555;
+  padding: 5px 0;
+}
+nav .nav .nav-main ul.demand .chapter-list{
+  display: none;
+  width: 75px;
+  left: 142px;
+  text-align: center;
+  top: 137px;
+  position: fixed;
+  background:#fff;
+  border: 1px solid #555;
+  border-radius: 8px;
+}
+nav .nav .nav-main ul.demand #subject-list img,nav .nav .nav-main ul.demand .chapter-list img{
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  border-radius: 50%;
+  float: left;
+}
+nav .nav .nav-main ul li.ColumnsGrade {
+  display: block;
+  text-align: left;
+  line-height: 44px; }
+nav .nav .nav-main ul li.ColumnsSubject,nav .nav .nav-main ul li.ColumnsUnit{
+  height: 40px;
+  line-height: 40px;
+}
+nav .nav .nav-main ul li a.grade1{
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  padding: 0 10px;
+  color: #555;
+  text-decoration: none; }
+nav .nav .nav-main ul li a.grade1.active{
+  transform: scale(1.2);
+  color: #e30115;
+}
+nav .nav .nav-main ul li a.grade1.onHover,nav .nav .nav-main ul div a.title.onHover {
+  color: #e30115;
+}
+nav .nav .nav-main ul li .gradeColumn{
+  height: 38px;
+  padding: 0 5px;
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+  position: relative;
+  text-decoration: none;
+}
+nav .nav .nav-main ul li a.unionColumn{
+  height: 38px;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+a.title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80px;
+  height: 30px;
+  float: left;
+  color: #555;
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 30px;
+}
+nav .nav .nav-main ul li a:hover {
+  color: #CB242B; }
+
+section#media{
+  margin-top: 86px;
+}
+
+/*电视直播样式*/
+.Live-TV-box {
+  max-width: 1200px;
+  min-width: 1100px;
+  margin: 0 auto; }
+  .Live-TV-box .TV-box {
+    padding: 50px 50px 50px 50px; }
+    .Live-TV-box .TV-box .select-live {
+      height: 45px; }
+      .Live-TV-box .TV-box .select-live .live-title {
+        background: url("../images/TV_35.137254901961px_1197714_easyicon.net.png") no-repeat;
+        height: 100%;
+        font-size: 32px;
+        padding-left: 50px;
+        line-height: 33px;
+        float: left;
+        color: #444; }
+      .Live-TV-box .TV-box .select-live .select-live-tv {
+        float: left;
+        height: 100%;
+        margin-left: 10px; }
+        .Live-TV-box .TV-box .select-live .select-live-tv ul {
+          list-style: none;
+          margin-top: 10px; }
+          .Live-TV-box .TV-box .select-live .select-live-tv ul li {
+            display: inline-block;
+            font-size: 14px;
+            margin-left: 5px; }
+            .Live-TV-box .TV-box .select-live .select-live-tv ul li a {
+              padding: 3px 6px;
+              text-decoration: none;
+              color: #666;
+              border: 1px solid #d7d7d7;
+              border-radius: 2px;
+              cursor: pointer; }
+              .Live-TV-box .TV-box .select-live .select-live-tv ul li a:not(.active):hover {
+                border: 1px solid #cB242B;
+                color: #cB242B; }
+            .Live-TV-box .TV-box .select-live .select-live-tv ul li .active {
+              background: #cB242B;
+              color: #fff;
+              border: 1px solid #cB242B; }
+    .Live-TV-box .TV-box .border1 {
+      height: 2px;
+      width: 35px;
+      background: #cB242B; }
+    .Live-TV-box .TV-box .border2 {
+      content: '';
+      top: 50px;
+      left: 0;
+      width: 99%;
+      height: 1px;
+      z-index: 1;
+      background: -webkit-linear-gradient(left, rgba(186, 186, 186, 0) 0, #bababa 10%, #bababa 80%, rgba(186, 186, 186, 0) 100%); }
+    .Live-TV-box .TV-box .tv-box {
+      padding-top: 20px; }
+      .Live-TV-box .TV-box .tv-box ul {
+        list-style: none;
+        width: 103%;
+        margin-left: -10px; }
+        .Live-TV-box .TV-box .tv-box ul li {
+          display: inline-block;
+          *display: inline;
+          zoom: 1;
+          margin: 10px;
+          background: #f8f8f8;
+          width: 17.5%; }
+          .Live-TV-box .TV-box .tv-box ul li a {
+            display: block;
+            width: 100%;
+            position: relative;
+            text-decoration: none;
+            padding-bottom: 5px;
+            color: #666;
+            box-shadow: 0 0 0 #d2d2d2;
+            transition: box-shadow 0.5s;
+            -moz-transition: box-shadow 0.5s;
+            /* Firefox 4 */
+            -webkit-transition: box-shadow 0.5s;
+            /* Safari and Chrome */
+            -o-transition: box-shadow 0.5s;
+            /* Opera */ }
+            .Live-TV-box .TV-box .tv-box ul li a:hover {
+              box-shadow: 0 3px 0 #d2d2d2; }
+            .Live-TV-box .TV-box .tv-box ul li a:hover p {
+              color: #cB242B; }
+            .Live-TV-box .TV-box .tv-box ul li a img {
+              width: 100%;
+              height: 92px;
+              border: 0; }
+            .Live-TV-box .TV-box .tv-box ul li a .Sign {
+              padding: 0 5px; }
+            .Live-TV-box .TV-box .tv-box ul li a p {
+              text-align: center;
+              font-weight: bold;
+              font-size: 13px;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;  }
+            .Live-TV-box .TV-box .tv-box ul li a .bofang {
+              position: absolute;
+              font-size: 45px;
+              color: #CB242B;
+              top: 50%;
+              margin-top: -10px;
+              left: 50%;
+              margin-left: -23px;
+              opacity: 0;
+              filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+              transition: top 0.5s, opacity 0.5s;
+              -moz-transition: top 0.5s, opacity 0.5s;
+              /* Firefox 4 */
+              -webkit-transition: top 0.5s, opacity 0.5s;
+              /* Safari and Chrome */
+              -o-transition: top 0.5s, opacity 0.5s;
+              /* Opera */ }
+            .Live-TV-box .TV-box .tv-box ul li a:hover .bofang {
+              top: 17%;
+              opacity: 1;
+              filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100); }
+
+/*页脚*/
+._footer {
+  width: 100%;
+  font-family: '微软雅黑', Tahoma;  }
+  ._footer .footer {
+    color: #868686;
+    min-width: 1100px;
+    max-width: 1200px;
+    background: #fff;
+    height: 150px;
+    margin: 0 auto; }
+    ._footer .footer .footer-left {
+      width: 58%;
+      height: 100%;
+      margin-left: 50px;
+      float: left; }
+      ._footer .footer .footer-left .footer-logo {
+        padding-top: 20px; }
+      ._footer .footer .footer-left .footer-logo a img {
+        height: 30px;
+      }
+      ._footer .footer .footer-left .flist ul {
+        list-style: none;
+        margin-top: 10px; }
+        ._footer .footer .footer-left .flist ul li {
+          display: inline-block;
+          padding: 0 15px;
+          *display: inline;
+          zoom: 1; }
+          ._footer .footer .footer-left .flist ul li a {
+            color: #777;
+            font-weight: bolder;
+            text-decoration: none;
+            font-size: 13px; }
+            ._footer .footer .footer-left .flist ul li a:hover {
+              color: #cB242B; }
+        ._footer .footer .footer-left .flist ul li:first-child {
+          padding-left: 0; }
+    ._footer .footer .footer-right {
+      padding-left: 50px;
+      width: 32%;
+      float: right; }
+      ._footer .footer .footer-right .rlist {
+        margin-top: 15px;
+        list-style: none; }
+        ._footer .footer .footer-right .rlist li {
+          display: inline-block;
+          padding: 0 15px;
+          *display: inline;
+          zoom: 1; }
+          ._footer .footer .footer-right .rlist li a {
+            color: #777;
+            font-size: 20px;
+            text-decoration: none; }
+            ._footer .footer .footer-right .rlist li a span {
+              font-size: 14px; }
+            ._footer .footer .footer-right .rlist li a:hover {
+              color: #cB242B; }
+      ._footer .footer .footer-right .rimg {
+        list-style: none;
+        margin-top: 15px; }
+        ._footer .footer .footer-right .rimg li {
+          display: inline-block;
+          padding: 0 20px;
+          *display: inline;
+          zoom: 1;
+          position: relative;
+        }
+          ._footer .footer .footer-right .rimg li a {
+            color: #868686;
+            text-decoration: none;
+            font-size: 35px; }
+            ._footer .footer .footer-right .rimg li a.download{
+              font-size: 32px;
+            }
+            ._footer .footer .footer-right .rimg li .qrcode-box-wrp{
+              background: #cB242B;
+              margin-top: -190px;
+
+              position: absolute;
+              display: none;
+              transition: .2s;
+              z-index: 100000;
+              height: 150px;
+              right: -95px;
+              width: 260px;
+              /*right: -23px;
+              width: 130px;*/
+          }
+          ._footer .footer .footer-right .rimg li .qrcode-box-wrp div.code{
+            width: 130px;
+            height: 130px;
+            float: left;
+            text-align: center;
+          }
+          ._footer .footer .footer-right .rimg li .qrcode-box-wrp div.code p{
+            font-size: 14px;
+            color: #fff;
+            cursor: pointer;
+          }
+          ._footer .footer .footer-right .rimg li .qrcode-box-wrp #detailCode,#detailCodeCopy,._footer .footer .footer-right .rimg li .qrcode-box-wrp #IOSCode,#IOSCodeCopy{
+            text-align: center;
+            margin-top: 13px;
+            width: 128px;
+            position: relative;
+            height: 110px;
+          }
+          ._footer .footer .footer-right .rimg li .qrcode-box-wrp #detailCode img,#detailCodeCopy img,._footer .footer .footer-right .rimg li .qrcode-box-wrp #IOSCode img,#IOSCodeCopy img{
+            border: 2px solid rgba(256,256,256,0.7);
+            width: 100px;
+            margin:0 auto;
+          }
+            ._footer .footer .footer-right .rimg li a:hover {
+              color: #cB242B; }
+
+/*live-播放页面*/
+.site-container {
+  min-width: 1100px;
+  position: relative;
+  z-index: 2;
+margin-top: 86px;}
+  .site-container .video-wall {
+    height: 630px;
+    background: url("../images/background.jpg"); }
+    .site-container .video-wall .player {
+      width: 1100px;
+      height: 630px;
+      margin: 0 auto;
+      /*电影要付费*/
+      /*播放电视剧右边*/
+      /*播放电影右边*/
+      /*综艺右边*/ }
+      .site-container .video-wall .player .mod-player {
+        width: 800px;
+        height: 450px;
+        background: #000;
+        position: relative;
+        float: left; }
+        .site-container .video-wall .player .mod-player .live-player {
+          width: 100%;
+          height: 100%;
+          font-size:15px;
+        }
+      .site-container .video-wall .player .buy-box {
+        display: none; }
+        .site-container .video-wall .player .buy-box .tit {
+          font-size: 14px;
+          color: #ccc;
+          padding: 5px 20px; }
+        .site-container .video-wall .player .buy-box .membership-button {
+          padding: 10px 0 20px 20px; }
+          .site-container .video-wall .player .buy-box .membership-button a {
+            text-decoration: none;
+            background: #BB242B;
+            color: #f2f2f2;
+            padding: 10px 40px;
+            font-size: 20px;
+            border-radius: 2px; }
+            .site-container .video-wall .player .buy-box .membership-button a:hover {
+              color: #fff;
+              background: #CB242B; }
+        .site-container .video-wall .player .buy-box .buy-text {
+          padding: 10px 20px;
+          border-top: 1px dashed #666; }
+          .site-container .video-wall .player .buy-box .buy-text a {
+            color: #999;
+            text-decoration: none;
+            font-size: 14px; }
+      .site-container .video-wall .player .channel-list {
+        overflow: hidden;
+        width: 290px;
+        height: 450px;
+        background: #131313;
+        float: right;
+        position: relative;
+      }
+        .site-container .video-wall .player .channel-list .show-tab {
+          height: 55px;
+          border-bottom: 1px solid #232323; }
+          .site-container .video-wall .player .channel-list .show-tab ul {
+            margin-left: 15px;
+            list-style: none; }
+            .site-container .video-wall .player .channel-list .show-tab ul li {
+              padding: 0 15px;
+              display: inline-block; }
+              .site-container .video-wall .player .channel-list .show-tab ul li .active {
+                color: #cB242B;
+                border-bottom: 2px solid #cB242B; }
+              .site-container .video-wall .player .channel-list .show-tab ul li a {
+                cursor: pointer;
+                color: #828282;
+                font-weight: bold;
+                font-size: 16px;
+                padding: 5px 0;
+                line-height: 55px; }
+        .site-container .video-wall .player .channel-list .central-TV-list-0, .site-container .video-wall .player .channel-list .central-TV-list-1 {
+          max-height: 385px;
+          overflow-y: scroll;
+          display: none; }
+          .site-container .video-wall .player .channel-list .central-TV-list-0 ul, .site-container .video-wall .player .channel-list .central-TV-list-1 ul {
+            list-style: none;
+            position: relative; }
+            .site-container .video-wall .player .channel-list .central-TV-list-0 ul .active, .site-container .video-wall .player .channel-list .central-TV-list-1 ul .active {
+              background: #313131;
+              width: 100%; }
+              .site-container .video-wall .player .channel-list .central-TV-list-0 ul .active span, .site-container .video-wall .player .channel-list .central-TV-list-1 ul .active span {
+                font-size: 12px;
+                color: #BB242B; }
+            .site-container .video-wall .player .channel-list .central-TV-list-0 ul li, .site-container .video-wall .player .channel-list .central-TV-list-1 ul li {
+              width: 100%;
+              height: 55px;
+              line-height: 55px;
+              border-bottom: 1px solid #242424;
+              border-top: 1px solid #303030;
+              background: #262626;
+              color: #a2a2a2;
+              cursor: pointer;
+              font-weight: bold; }
+              .site-container .video-wall .player .channel-list .central-TV-list-0 ul li:not(.active):hover, .site-container .video-wall .player .channel-list .central-TV-list-1 ul li:not(.active):hover {
+                background: #181818; }
+              .site-container .video-wall .player .channel-list .central-TV-list-0 ul li:not(.active):hover span, .site-container .video-wall .player .channel-list .central-TV-list-1 ul li:not(.active):hover span {
+                color: #cB242B; }
+              .site-container .video-wall .player .channel-list .central-TV-list-0 ul li img, .site-container .video-wall .player .channel-list .central-TV-list-1 ul li img {
+                width: 90px;
+                height: 42px;
+                vertical-align: middle;
+                display: inline-block;
+                margin-left: 30px; }
+              .site-container .video-wall .player .channel-list .central-TV-list-0 ul li span, .site-container .video-wall .player .channel-list .central-TV-list-1 ul li span {
+                margin-left: 10px; }
+      .site-container .video-wall .player .tele-info-box {
+        max-height: 385px;
+        overflow-y: scroll; }
+        .site-container .video-wall .player .tele-info-box .tele-details {
+          padding: 10px; }
+          .site-container .video-wall .player .tele-info-box .tele-details .details {
+            color: #c2c2c2;
+            font-size: 14px; }
+            .site-container .video-wall .player .tele-info-box .tele-details .details .tele-name p {
+              font-size: 18px;
+              color: #c2c2c2; }
+              .site-container .video-wall .player .tele-info-box .tele-details .details .tele-name p .score {
+                float: right;
+                font-weight: normal;
+                *margin-top: -30px;
+                font-size: 14px; }
+                .site-container .video-wall .player .tele-info-box .tele-details .details .tele-name p .score .score-l {
+                  font-size: 20px;
+                  color: #cB242B; }
+                .site-container .video-wall .player .tele-info-box .tele-details .details .tele-name p .score .score-s {
+                  color: #cB242B; }
+            .site-container .video-wall .player .tele-info-box .tele-details .details .add-collect {
+              height: 30px;
+              line-height: 30px; }
+              .site-container .video-wall .player .tele-info-box .tele-details .details .add-collect a {
+                color: #c2c2c2;
+                background: #cB242B;
+                padding: 5px 10px;
+                border-radius: 2px;
+                cursor: pointer; }
+                .site-container .video-wall .player .tele-info-box .tele-details .details .add-collect a:hover {
+                  color: #fff;
+                  background: #CB242B; }
+                .site-container .video-wall .player .tele-info-box .tele-details .details .add-collect a i {
+                  margin-right: 5px; }
+              .site-container .video-wall .player .tele-info-box .tele-details .details .add-collect span {
+                float: right;
+                *margin-top: -30px; }
+            .site-container .video-wall .player .tele-info-box .tele-details .details .episode-list {
+              margin-top: 5px; }
+              .site-container .video-wall .player .tele-info-box .tele-details .details .episode-list ul {
+                list-style: none; }
+                .site-container .video-wall .player .tele-info-box .tele-details .details .episode-list ul li {
+                  display: inline-block;
+                  *display: inline;
+                  zoom: 1;
+                  width: 45px;
+                  margin: 3px 2px;
+                  *margin:3px;
+                  height: 30px;
+                  line-height: 30px; }
+                  .site-container .video-wall .player .tele-info-box .tele-details .details .episode-list ul li .active {
+                    background: #cB242B;
+                    border: 1px solid #cB242B;
+                    color: #fff; }
+                  .site-container .video-wall .player .tele-info-box .tele-details .details .episode-list ul li a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    background: #444444;
+                    border: 1px solid #444;
+                    cursor: pointer;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: #c2c2c2;white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;  }
+                    .site-container .video-wall .player .tele-info-box .tele-details .details .episode-list ul li a:not(.active):hover {
+                      border: 1px solid #ccc;
+                      color: #fff; }
+      .site-container .video-wall .player .movie-info-box {
+        max-height: 380px;
+        overflow: hidden; }
+        .site-container .video-wall .player .movie-info-box .movie-details {
+          padding: 10px; }
+          .site-container .video-wall .player .movie-info-box .movie-details .details {
+            color: #c2c2c2;
+            font-size: 14px; }
+            .site-container .video-wall .player .movie-info-box .movie-details .details .movie-name p {
+              font-size: 18px;
+              color: #c2c2c2; }
+              .site-container .video-wall .player .movie-info-box .movie-details .details .movie-name p .score {
+                float: right;
+                font-weight: normal;
+                font-size: 14px; }
+                .site-container .video-wall .player .movie-info-box .movie-details .details .movie-name p .score .score-l {
+                  font-size: 20px;
+                  color: #cB242B; }
+                .site-container .video-wall .player .movie-info-box .movie-details .details .movie-name p .score .score-s {
+                  color: #cB242B; }
+            .site-container .video-wall .player .movie-info-box .movie-details .details .tags ul {
+              list-style: none;
+              display: inline-block; }
+              .site-container .video-wall .player .movie-info-box .movie-details .details .tags ul li {
+                display: inline-block; }
+                .site-container .video-wall .player .movie-info-box .movie-details .details .tags ul li a {
+                  text-decoration: none;
+                  color: #CB242B; }
+            .site-container .video-wall .player .movie-info-box .movie-details .details .actor ul {
+              list-style: none;
+              display: inline-block; }
+              .site-container .video-wall .player .movie-info-box .movie-details .details .actor ul li {
+                display: inline-block; }
+                .site-container .video-wall .player .movie-info-box .movie-details .details .actor ul li a {
+                  text-decoration: none;
+                  color: #CB242B; }
+            .site-container .video-wall .player .movie-info-box .movie-details .details .Program .btn {
+              cursor: pointer; }
+            .site-container .video-wall .player .movie-info-box .movie-details .details .Program p {
+              display: none;
+              font-size: 13px; }
+            .site-container .video-wall .player .movie-info-box .movie-details .details .add-collect {
+              height: 30px;
+              line-height: 30px; }
+              .site-container .video-wall .player .movie-info-box .movie-details .details .add-collect a {
+                color: #c2c2c2;
+                background: #cB242B;
+                padding: 5px 10px;
+                border-radius: 2px;
+                cursor: pointer; }
+                .site-container .video-wall .player .movie-info-box .movie-details .details .add-collect a:hover {
+                  color: #fff;
+                  background: #CB242B; }
+                .site-container .video-wall .player .movie-info-box .movie-details .details .add-collect a i {
+                  margin-right: 5px; }
+        .site-container .video-wall .player .movie-info-box .on-now {
+          padding: 10px;
+          height: 210px;
+          background: #000000; }
+          .site-container .video-wall .player .movie-info-box .on-now .movie-img-s {
+            float: left;
+            width: 100%; }
+            .site-container .video-wall .player .movie-info-box .on-now .movie-img-s img {
+              width: 128px;
+              height: 192px; }
+          .site-container .video-wall .player .movie-info-box .on-now .on-now-name {
+            padding-left: 10px;
+            color: #c2c2c2;
+            font-size: 13px; }
+            .site-container .video-wall .player .movie-info-box .on-now .on-now-name i {
+              color: #cB242B;
+              margin-right: 5px; }
+      .site-container .video-wall .player .variety-info-box {
+        max-height: 380px;
+        overflow: hidden; }
+        .site-container .video-wall .player .variety-info-box .variety-details .details {
+          padding: 10px;
+          color: #c2c2c2;
+          font-size: 14px; }
+          .site-container .video-wall .player .variety-info-box .variety-details .details .variety-name p {
+            font-size: 18px;
+            color: #c2c2c2; }
+          .site-container .video-wall .player .variety-info-box .variety-details .details .variety-name p .score {
+            float: right;
+            font-weight: normal;
+            *margin-top: -30px;
+            font-size: 14px; }
+          .site-container .video-wall .player .variety-info-box .variety-details .details .variety-name p .score .score-l {
+            font-size: 20px;
+            color: #cB242B; }
+          .site-container .video-wall .player .variety-info-box .variety-details .details .variety-name p .score .score-s {
+            color: #cB242B; }
+          .site-container .video-wall .player .variety-info-box .variety-details .details .Program .btn {
+            cursor: pointer; }
+          .site-container .video-wall .player .variety-info-box .variety-details .details .Program p {
+            display: none;
+            font-size: 13px; }
+          .site-container .video-wall .player .variety-info-box .variety-details .details .add-collect {
+            height: 30px;
+            line-height: 30px; }
+            .site-container .video-wall .player .variety-info-box .variety-details .details .add-collect a {
+              color: #c2c2c2;
+              background: #cB242B;
+              padding: 5px 10px;
+              border-radius: 2px;
+              cursor: pointer; }
+              .site-container .video-wall .player .variety-info-box .variety-details .details .add-collect a:hover {
+                color: #fff;
+                background: #CB242B; }
+              .site-container .video-wall .player .variety-info-box .variety-details .details .add-collect a i {
+                margin-right: 5px; }
+            .site-container .video-wall .player .variety-info-box .variety-details .details .add-collect span {
+              float: right;
+              *margin: -30px; }
+        .site-container .video-wall .player .variety-info-box .variety-details .variety-list ul {
+          font-size: 13px;
+          list-style: none; }
+          .site-container .video-wall .player .variety-info-box .variety-details .variety-list ul .active {
+            background: #3F3F3F;
+            border-left: 3px solid #cB242B; }
+          .site-container .video-wall .player .variety-info-box .variety-details .variety-list ul li {
+            border-left: 3px solid #262626;
+            padding: 5px 5px 5px 30px;
+            box-sizing: border-box;
+            width: 100%;
+            *width: 87%;
+            border-bottom: 1px solid #242424;
+            border-top: 1px solid #303030;
+            background: #262626;
+            color: #a2a2a2;
+            cursor: pointer; }
+            .site-container .video-wall .player .variety-info-box .variety-details .variety-list ul li:not(.active):hover {
+              background: #282828;
+              border-left: 3px solid #262626; }
+            .site-container .video-wall .player .variety-info-box .variety-details .variety-list ul li .number {
+              width: 30px;
+              float: left;
+              margin-left: -25px; }
+            .site-container .video-wall .player .variety-info-box .variety-details .variety-list ul li .num-content {
+              margin-left: 5px; }
+              .site-container .video-wall .player .variety-info-box .variety-details .variety-list ul li .num-content p span {
+                margin-left: 10px; }
+              .site-container .video-wall .player .variety-info-box .variety-details .variety-list ul li .num-content .guests {
+                margin-top: 20px; }
+                .site-container .video-wall .player .variety-info-box .variety-details .variety-list ul li .num-content .guests a {
+                  color: #c2c2c2; }
+      .site-container .video-wall .player .channel-list-control {
+        width: 10px;
+        height: 450px;
+        background: #282828;
+        float: right;
+        position: relative;
+        z-index: 999; }
+        .site-container .video-wall .player .channel-list-control .s-div, .site-container .video-wall .player .channel-list-control .s-div1 {
+          cursor: pointer;
+          height: 450px;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          box-shadow: -2px 0 10px black;
+          line-height: 450px;
+          color: #aaa;
+          font-size: 12px;
+          z-index: 999; }
+          .site-container .video-wall .player .channel-list-control .s-div:hover, .site-container .video-wall .player .channel-list-control .s-div1:hover {
+            background: #383838;
+            color: #fff; }
+
+.TV-program-list-box {
+  width: 100%; }
+  .TV-program-list-box .TV-program-list {
+    width: 1100px;
+    margin: 0 auto; }
+    .TV-program-list-box .TV-program-list .list-tit {
+      color: #666;
+      font-size: 20px;
+      font-weight: 500; }
+      .TV-program-list-box .TV-program-list .list-tit p {
+        padding: 20px 0px; }
+    .TV-program-list-box .TV-program-list .program-date {
+      width: 100%; }
+      .TV-program-list-box .TV-program-list .program-date ul {
+        width: 100%;
+        list-style: none;
+        height: 35px; }
+        .TV-program-list-box .TV-program-list .program-date ul .ho {
+          color: #CB242B; }
+        .TV-program-list-box .TV-program-list .program-date ul li {
+          width: 14.285714%;
+          float: left;
+          line-height: 35px;
+          color: #666;
+          cursor: pointer;
+          text-align: center;
+          font-weight: bold; }
+      .TV-program-list-box .TV-program-list .program-date .border1 {
+        content: '';
+        width: 100%;
+        height: 1px;
+        z-index: 1;
+        background: -webkit-linear-gradient(left, rgba(186, 186, 186, 0) 0, #bababa 0%, #bababa 80%, rgba(186, 186, 186, 0) 100%); }
+        .TV-program-list-box .TV-program-list .program-date .border1 .Triangle-box {
+          height: 1px;
+          background: #CB242B;
+          width: 157.141px;
+          position: relative;
+          float: left; }
+          .TV-program-list-box .TV-program-list .program-date .border1 .Triangle-box .arrow-up {
+            position: absolute;
+            left: 50%;
+            margin-left: -10px;
+            width: 0;
+            height: 0;
+            top: -10px;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #CB242B; }
+          .TV-program-list-box .TV-program-list .program-date .border1 .Triangle-box .arrow-up1 {
+            position: absolute;
+            left: 50%;
+            margin-left: -9px;
+            width: 0;
+            height: 0;
+            top: -8px;
+            border-left: 9px solid transparent;
+            border-right: 9px solid transparent;
+            border-bottom: 9px solid #f2f2f2; }
+    .TV-program-list-box .TV-program-list .list-table {
+      width: 100%;
+      padding-top: 30px;
+      padding-bottom: 30px; }
+      .TV-program-list-box .TV-program-list .list-table table {
+        width: 100%;
+        border-collapse: collapse;
+        border-top: 1px solid #ddd; }
+        .TV-program-list-box .TV-program-list .list-table table tr td {
+          height: 35px;
+          line-height: 35px;
+          width: 33.3333%;
+          padding: 20px;
+          font-size: 13px;
+          border-bottom: 1px solid #ddd;
+          border-right: 1px solid #ddd;
+          color: #666; }
+          .TV-program-list-box .TV-program-list .list-table table tr td i, .TV-program-list-box .TV-program-list .list-table table tr td span {
+            display: inline-block; }
+          .TV-program-list-box .TV-program-list .list-table table tr td .OnAir {
+            float: right;
+            color: #bB242B; }
+          .TV-program-list-box .TV-program-list .list-table table tr td .start-time {
+            margin-left: 10px; }
+          .TV-program-list-box .TV-program-list .list-table table tr td .program {
+            margin-left: 10px; }
+          .TV-program-list-box .TV-program-list .list-table table tr td .bofang {
+            color: #BB242B; }
+          .TV-program-list-box .TV-program-list .list-table table tr td .look-back {
+            margin-top: 5px;
+            line-height: 25px;
+            background: #2B8AE0;
+            padding: 0px 20px;
+            font-size: 13px;
+            float: right;
+            cursor: pointer;
+            color: #f0f0f0; }
+            .TV-program-list-box .TV-program-list .list-table table tr td .look-back:hover {
+              background: #0A79E0;
+              color: #fff; }
+          .TV-program-list-box .TV-program-list .list-table table tr td:not(.not-begun):hover {
+            background: #e2e2e2; }
+        .TV-program-list-box .TV-program-list .list-table table tr .not-begun {
+          color: #aaa; }
+        .TV-program-list-box .TV-program-list .list-table table tr td:last-child {
+          border-right: none; }
+
+/*电影点播*/
+.On-Film-box {
+  max-width: 1200px;
+  min-width: 1100px;
+  margin: 0 auto;
+margin-top: 20px;}
+  .On-Film-box .Film-box {
+    /*padding: 50px 0px; */   padding: 50px; min-height: 223px; }
+    .On-Film-box .Film-box .select-demand {
+      height: 45px; }
+      .On-Film-box .Film-box .select-demand .demand-title {
+        background: url("../images/TV_29.779980178394px_1191150_easyicon.net.png") no-repeat;
+        height: 100%;
+        font-size: 32px;
+        padding-left: 50px;
+        line-height: 33px;
+        color: #444; }
+    .On-Film-box .Film-box .have-selected {
+      margin-top: 20px;
+      border-top: 1px dashed #c2c2c2;
+      color: #555;
+      font-size: 13px;
+      font-weight: bold;
+      position: relative; }
+      .On-Film-box .Film-box .have-selected .shouqi, .On-Film-box .Film-box .have-selected .gengduo {
+        position: absolute;
+        right: 0;
+        top: -10px;
+        color: #555;
+        padding: 0 10px; }
+    .On-Film-box .Film-box .film-box {
+      width: 1100px;
+      padding-top: 40px; }
+      .On-Film-box .Film-box .film-box ul {
+        list-style: none;
+        width: 102%;
+        margin-left: -7px; }
+        .On-Film-box .Film-box .film-box ul li {
+          border-radius: 2px;
+          display: inline-block;
+          *display: inline;
+          zoom: 1;
+          margin: 7px;
+          background: #fff;
+          width: 160px;
+          padding: 5px;
+          position: relative; }
+          .On-Film-box .Film-box .film-box ul li:hover {
+            background: #e0e0e0; }
+          .On-Film-box .Film-box .film-box ul li a {
+            width: 100%;
+            text-decoration: none;
+            color: #666;
+            cursor: pointer; }
+            .On-Film-box .Film-box .film-box ul li a .movie-img {
+              position: relative;
+              width: 100%;
+              overflow: hidden; }
+              .On-Film-box .Film-box .film-box ul li a .movie-img img {
+                display: block;
+                width: 100%;
+                height: 230px; }
+              .On-Film-box .Film-box .film-box ul li a .movie-img .bofang {
+                display: block;
+                position: absolute;
+                font-size: 45px;
+                color: #CB242B;
+                top: 70%;
+                left: 50%;
+                margin-left: -23px;
+                opacity: 0;
+                filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+                transition: top 0.5s, opacity 0.5s;
+                -moz-transition: top 0.5s, opacity 0.5s;
+                /* Firefox 4 */
+                -webkit-transition: top 0.5s, opacity 0.5s;
+                /* Safari and Chrome */
+                -o-transition: top 0.5s, opacity 0.5s;
+                /* Opera */ }
+              .On-Film-box .Film-box .film-box ul li a .movie-img:hover .bofang {
+                top: 80px;
+                opacity: 1;
+                filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100); }
+              .On-Film-box .Film-box .film-box ul li .mask-text {
+                position: absolute;
+                background: #000000;
+                filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+                background: rgba(0, 0, 0, 0.3);
+                bottom: 31px;
+                width: 160px;
+                display: inline-block;
+                }
+                .On-Film-box .Film-box .film-box ul li .mask-text em {
+                  font-style: normal;
+                  display: inline-block;
+                  padding: 0 3px;
+                  color: #fff;
+                  font-size: 16px;
+                  float: right;
+                }
+                .On-Film-box .Film-box .film-box ul li .mask-text em .like{
+                  cursor: pointer;
+                }
+                  .On-Film-box .Film-box .film-box ul li .mask-text em .liked {
+                    color: #FB242B;
+                    z-index: 999; }
+              .On-Film-box .Film-box .film-box ul li a .movie-img .vip-free, .On-Film-box .Film-box .film-box ul li a .movie-img .free {
+                position: absolute;
+                top: 13px;
+                left: -30px;
+                color: #fff;
+                background: #DB242B;
+                width: 100px;
+                text-align: center;
+                font-size: 12px;
+                display: inline-block;
+                transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                /* IE 9 */
+                -moz-transform: rotate(-45deg);
+                /* Firefox */
+                -webkit-transform: rotate(-45deg);
+                /* Safari 和 Chrome */
+                -o-transform: rotate(-45deg); }
+              .On-Film-box .Film-box .film-box ul li a .movie-img .free {
+                background: #5CB421; }
+          .On-Film-box .Film-box .film-box ul li .movie-title {
+            height: 25px;
+            line-height: 25px; }
+            .On-Film-box .Film-box .film-box ul li .movie-title a {
+              font-size: 14px;
+              font-weight: bold;
+              height: 20px;
+              display: inline-block;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;}
+              .On-Film-box .Film-box .film-box ul li .movie-title a:hover {
+                color: #BB242B; }
+            .On-Film-box .Film-box .film-box ul li .movie-title .movie-score {
+              font-family: "microsoft yahei",simsun;
+              display: block;
+              float: right;
+              font-weight: bold;
+              color: #BB242B;
+              *margin-top: -26px; }
+              .On-Film-box .Film-box .film-box ul li .movie-title .movie-score .score-l {
+                font-size: 14px; }
+                .On-Film-box .Film-box .film-box ul li .movie-title .movie-score .score-l .score-s {
+                  font-size: 12px; }
+          .On-Film-box .Film-box .film-box ul li .actor {
+            color: #666; }
+            .On-Film-box .Film-box .film-box ul li .actor span {
+              margin-left: 5px; }
+
+/*电视剧点播*/
+.On-Teleplay-box {
+  max-width: 1200px;
+  min-width: 1100px;
+  margin: 0 auto;
+  margin-top: 20px;}
+  .On-Teleplay-box .Teleplay-box {
+    padding: 50px 50px 50px 50px; min-height: 223px;}
+    .On-Teleplay-box .Teleplay-box .select-demand {
+      height: 45px; }
+      .On-Teleplay-box .Teleplay-box .select-demand .demand-title {
+        background: url("../images/TV_29.779980178394px_1191150_easyicon.net.png") no-repeat;
+        height: 100%;
+        font-size: 32px;
+        padding-left: 50px;
+        line-height: 33px;
+        color: #444; }
+    .On-Teleplay-box .Teleplay-box .have-selected {
+      margin-top: 20px;
+      border-top: 1px dashed #c2c2c2;
+      color: #555;
+      font-size: 13px;
+      font-weight: bold;
+      position: relative; }
+      .On-Teleplay-box .Teleplay-box .have-selected .shouqi, .On-Teleplay-box .Teleplay-box .have-selected .gengduo {
+        position: absolute;
+        right: 0;
+        top: -10px;
+        color: #555;
+        padding: 0 10px; }
+    .On-Teleplay-box .Teleplay-box .teleplay-box {
+      width: 1100px;
+      padding-top: 40px; }
+      .On-Teleplay-box .Teleplay-box .teleplay-box ul {
+        list-style: none;
+        width: 102%;
+        margin-left: -7px; }
+        .On-Teleplay-box .Teleplay-box .teleplay-box ul li {
+          border-radius: 2px;
+          display: inline-block;
+          *display: inline;
+          zoom: 1;
+          margin: 7px;
+          background: #fff;
+          width: 160px;
+          padding: 5px;
+          position: relative; }
+          .On-Teleplay-box .Teleplay-box .teleplay-box ul li:hover {
+            background: #e0e0e0; }
+          .On-Teleplay-box .Teleplay-box .teleplay-box ul li a {
+            width: 100%;
+            text-decoration: none;
+            color: #666; }
+            .On-Teleplay-box .Teleplay-box .teleplay-box ul li a .tele-img {
+              position: relative;
+              width: 100%; }
+              .On-Teleplay-box .Teleplay-box .teleplay-box ul li a .tele-img img {
+                display: block;
+                width: 100%;
+                height: 230px; }
+              .On-Teleplay-box .Teleplay-box .teleplay-box ul li a .tele-img .bofang {
+                display: block;
+                position: absolute;
+                font-size: 45px;
+                color: #CB242B;
+                top: 70%;
+                left: 50%;
+                margin-left: -23px;
+                filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+                opacity: 0;
+                transition: top 0.5s, opacity 0.5s;
+                -moz-transition: top 0.5s, opacity 0.5s;
+                /* Firefox 4 */
+                -webkit-transition: top 0.5s, opacity 0.5s;
+                /* Safari and Chrome */
+                -o-transition: top 0.5s, opacity 0.5s;
+                /* Opera */ }
+              .On-Teleplay-box .Teleplay-box .teleplay-box ul li a .tele-img:hover .bofang {
+                top: 80px;
+                filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+                opacity: 1; }
+              .On-Teleplay-box .Teleplay-box .teleplay-box ul li a .tele-img .mask-text {
+                display: none;
+                background: #000000;
+                filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+                background: rgba(0, 0, 0, 0.3);
+                bottom: 0;
+                width: 100%; position: absolute;
+              }
+                .On-Teleplay-box .Teleplay-box .teleplay-box ul li a .tele-img .mask-text em {
+                  font-style: normal;
+                  display: inline-block;
+                  padding: 0 3px;
+                  color: #fff;
+                  font-size: 16px;
+                  float: right; }
+                  .On-Teleplay-box .Teleplay-box .teleplay-box ul li a .tele-img .mask-text em .liked {
+                    color: #FB242B; }
+          .On-Teleplay-box .Teleplay-box .teleplay-box ul li .tele-title {
+            height: 25px;
+            line-height: 25px; }
+            .On-Teleplay-box .Teleplay-box .teleplay-box ul li .tele-title a {
+              font-size: 14px;
+              display: inline-block;
+              font-weight: bold;
+              height: 25px;
+              width: 126px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;}
+              .On-Teleplay-box .Teleplay-box .teleplay-box ul li .tele-title a:hover {
+                color: #BB242B; }
+            .On-Teleplay-box .Teleplay-box .teleplay-box ul li .tele-title .tele-score {
+              font-family: "microsoft yahei",simsun;
+              display: block;
+              float: right;
+              font-weight: bold;
+              color: #BB242B;
+              *margin-top: -26px; }
+              .On-Teleplay-box .Teleplay-box .teleplay-box ul li .tele-title .tele-score .score-l {
+                font-size: 14px; }
+                .On-Teleplay-box .Teleplay-box .teleplay-box ul li .tele-title .tele-score .score-l .score-s {
+                  font-size: 12px; }
+          .On-Teleplay-box .Teleplay-box .teleplay-box ul li .actor {
+            color: #666; }
+            .On-Teleplay-box .Teleplay-box .teleplay-box ul li .actor span {
+              margin-left: 5px; }
+
+/*综艺*/
+.On-Variety-box {
+  max-width: 1200px;
+  min-width: 1100px;
+  margin: 0 auto;
+  margin-top: 20px;}
+  .On-Variety-box .Variety-box {
+    padding: 50px 50px 50px 50px; }
+    .On-Variety-box .Variety-box .select-demand {
+      height: 45px; }
+      .On-Variety-box .Variety-box .select-demand .demand-title {
+        background: url("../images/stars_32px_533236_easyicon.net.png") no-repeat;
+        height: 100%;
+        font-size: 32px;
+        padding-left: 50px;
+        line-height: 33px;
+        color: #444; }
+    .On-Variety-box .Variety-box .have-selected {
+      margin-top: 20px;
+      border-top: 1px dashed #c2c2c2;
+      color: #555;
+      font-size: 13px;
+      font-weight: bold;
+      position: relative; }
+      .On-Variety-box .Variety-box .have-selected .shouqi, .On-Variety-box .Variety-box .have-selected .gengduo {
+        position: absolute;
+        right: 0;
+        top: -10px;
+        color: #555;
+        padding: 0 10px; }
+    .On-Variety-box .Variety-box .variety-box {
+      width: 1100px;
+      padding-top: 20px; }
+      .On-Variety-box .Variety-box .variety-box ul {
+        list-style: none;
+        width: 102%;
+        margin-left: -7px; }
+        .On-Variety-box .Variety-box .variety-box ul li {
+          border-radius: 2px;
+          display: inline-block;
+          margin: 7px;
+          background: #fff;
+          width: 160px;
+          padding: 5px;
+          position: relative; }
+          .On-Variety-box .Variety-box .variety-box ul li:hover {
+            background: #e0e0e0; }
+          .On-Variety-box .Variety-box .variety-box ul li a {
+            width: 100%;
+            text-decoration: none;
+            color: #666; }
+            .On-Variety-box .Variety-box .variety-box ul li a .variety-img {
+              position: relative;
+              width: 100%; }
+              .On-Variety-box .Variety-box .variety-box ul li a .variety-img img {
+                display: block;
+                width: 100%;
+                height: 230px; }
+              .On-Variety-box .Variety-box .variety-box ul li a .variety-img .bofang {
+                display: block;
+                position: absolute;
+                font-size: 45px;
+                color: #CB242B;
+                top: 70%;
+                left: 50%;
+                margin-left: -23px;
+                opacity: 0;
+                transition: top 0.5s, opacity 0.5s;
+                -moz-transition: top 0.5s, opacity 0.5s;
+                /* Firefox 4 */
+                -webkit-transition: top 0.5s, opacity 0.5s;
+                /* Safari and Chrome */
+                -o-transition: top 0.5s, opacity 0.5s;
+                /* Opera */ }
+              .On-Variety-box .Variety-box .variety-box ul li a .variety-img:hover .bofang {
+                top: 80px;
+                opacity: 1; }
+              .On-Variety-box .Variety-box .variety-box ul li a .variety-img .mask-text {
+                position: absolute;
+                background: rgba(0, 0, 0, 0.3);
+                bottom: 0;
+                width: 100%;
+                display: inline-block; }
+                .On-Variety-box .Variety-box .variety-box ul li a .variety-img .mask-text em {
+                  font-style: normal;
+                  display: inline-block;
+                  padding: 0 3px;
+                  color: #fff;
+                  font-size: 16px;
+                  float: right; }
+                  .On-Variety-box .Variety-box .variety-box ul li a .variety-img .mask-text em .liked {
+                    color: #FB242B; }
+          .On-Variety-box .Variety-box .variety-box ul li .variety-title {
+            height: 25px;
+            line-height: 25px; }
+            .On-Variety-box .Variety-box .variety-box ul li .variety-title a {
+              font-size: 14px;
+              font-weight: bold; }
+              .On-Variety-box .Variety-box .variety-box ul li .variety-title a:hover {
+                color: #BB242B; }
+            .On-Variety-box .Variety-box .variety-box ul li .variety-title .variety-score {
+              font-family: "microsoft yahei",simsun;
+              display: block;
+              float: right;
+              font-weight: bold;
+              color: #BB242B; }
+              .On-Variety-box .Variety-box .variety-box ul li .variety-title .variety-score .score-l {
+                font-size: 14px; }
+                .On-Variety-box .Variety-box .variety-box ul li .variety-title .variety-score .score-l .score-s {
+                  font-size: 12px; }
+          .On-Variety-box .Variety-box .variety-box ul li .actor {
+            color: #666; }
+            .On-Variety-box .Variety-box .variety-box ul li .actor span {
+              margin-left: 5px; }
+
+/*电视剧信息，猜你喜欢，影评*/
+.wrapper {
+  width: 100%; }
+  .wrapper .wrapper-main {
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 20px; }
+    .wrapper .wrapper-main .wrapper-left {
+      display: block;
+      width: 750px;  margin: auto;}
+      .wrapper .wrapper-main .wrapper-left .tele-info {
+        background: #fff;
+        min-height: 266px;
+        position: relative;
+        padding-left: 190px; }
+        .wrapper .wrapper-main .wrapper-left .tele-info .tele-img {
+          width: 190px;
+          position: absolute;
+          display: block;
+          left: 0; }
+          .wrapper .wrapper-main .wrapper-left .tele-info .tele-img .Episodes {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.4); }
+            .wrapper .wrapper-main .wrapper-left .tele-info .tele-img .Episodes p {
+              color: #fff;
+              padding: 2px 5px; }
+          .wrapper .wrapper-main .wrapper-left .tele-info .tele-img img {
+            width: 100%;
+            height: 266px;
+            display: block; }
+        .wrapper .wrapper-main .wrapper-left .tele-info .tele-info-right {
+          display: inline-block;
+          padding: 20px  20px 0px 20px;
+          width: 500px;
+          color: #666;
+          font-size: 14px; }
+          .wrapper .wrapper-main .wrapper-left .tele-info .tele-info-right a {
+            color: #444;
+            text-decoration: none; }
+            .wrapper .wrapper-main .wrapper-left .tele-info .tele-info-right a:hover {
+              color: #CB242B; }
+          .wrapper .wrapper-main .wrapper-left .tele-info .tele-info-right .tele-name-score .name {
+            color: #666;
+            font-size: 18px;
+            margin-right: 20px; }
+          .wrapper .wrapper-main .wrapper-left .tele-info .tele-info-right .tele-name-score span {
+            color: #CB242B; }
+            .wrapper .wrapper-main .wrapper-left .tele-info .tele-info-right .tele-name-score span .l {
+              font-size: 18px; }
+          .wrapper .wrapper-main .wrapper-left .tele-info .tele-info-right .tags, .wrapper .wrapper-main .wrapper-left .tele-info .tele-info-right .actor {
+            margin-top: 10px; }
+            .wrapper .wrapper-main .wrapper-left .tele-info .tele-info-right .tags ul, .wrapper .wrapper-main .wrapper-left .tele-info .tele-info-right .actor ul {
+              list-style: none;
+              display: inline-block; }
+              .wrapper .wrapper-main .wrapper-left .tele-info .tele-info-right .tags ul li, .wrapper .wrapper-main .wrapper-left .tele-info .tele-info-right .actor ul li {
+                display: inline-block; }
+          .wrapper .wrapper-main .wrapper-left .tele-info .tele-info-right .show-more {
+            color: #cB242B; }
+      .wrapper .wrapper-main .wrapper-left .more-recommend {
+        width: 100%;
+        margin: 20px auto; }
+        .wrapper .wrapper-main .wrapper-left .more-recommend .recommend-tit {
+          font-size: 20px;
+          color: #555; }
+          .wrapper .wrapper-main .wrapper-left .more-recommend .recommend-tit .biao {
+            float: left;
+            width: 5px;
+            height: 30px;
+            background: #AB242B; }
+          .wrapper .wrapper-main .wrapper-left .more-recommend .recommend-tit p {
+            margin-left: 10px; }
+        .wrapper .wrapper-main .wrapper-left .more-recommend .border1 {
+          content: '';
+          top: 50px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          z-index: 1;
+          background: -webkit-linear-gradient(left, rgba(186, 186, 186, 0) 0, #bababa 0%, #bababa 80%, rgba(186, 186, 186, 0) 100%); }
+        .wrapper .wrapper-main .wrapper-left .more-recommend .recommend-movie {
+          padding-bottom: 20px;
+          padding-top: 20px; }
+          .wrapper .wrapper-main .wrapper-left .more-recommend .recommend-movie ul {
+            list-style: none;
+            width: 102%;
+            margin-left: -4px; }
+            .wrapper .wrapper-main .wrapper-left .more-recommend .recommend-movie ul li {
+              border-radius: 2px;
+              display: inline-block;
+              *display: inline;
+              zoom: 1;
+              margin: 4px;
+              margin-bottom: 10px;
+              background: #fff;
+              width: 22.1%;
+              padding: 5px 5px 0 5px;
+              position: relative; }
+              .wrapper .wrapper-main .wrapper-left .more-recommend .recommend-movie ul li:hover {
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); }
+              .wrapper .wrapper-main .wrapper-left .more-recommend .recommend-movie ul li a {
+                width: 100%;
+                text-decoration: none;
+                color: #666;
+                height: 249px; }
+                .wrapper .wrapper-main .wrapper-left .more-recommend .recommend-movie ul li a .movie-img {
+                  position: relative;
+                  width: 100%; }
+                  .wrapper .wrapper-main .wrapper-left .more-recommend .recommend-movie ul li a .movie-img img {
+                    width: 100%;
+                    height: 249px;
+                    display: block; }
+              .wrapper .wrapper-main .wrapper-left .more-recommend .recommend-movie ul li .movie-name {
+                font-size: 14px;
+                padding: 5px 0; }
+              .wrapper .wrapper-main .wrapper-left .more-recommend .recommend-movie ul li .movie-name p{
+                font-weight: bold;
+                font-size: 13px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+              .wrapper .wrapper-main .wrapper-left .more-recommend .recommend-movie ul li:hover .movie-name {
+                color: #EB242B; }
+      .wrapper .wrapper-main .wrapper-left .review-box {
+        display: inline-block;
+        width: 100%;
+        color: #555; }
+        .wrapper .wrapper-main .wrapper-left .review-box .film-review-tit {
+          padding-bottom: 5px;
+          height: 25px;
+          line-height: 25px; }
+          .wrapper .wrapper-main .wrapper-left .review-box .film-review-tit p {
+            font-size: 20px; }
+        .wrapper .wrapper-main .wrapper-left .review-box .comment-box {
+          border: 1px solid #111;
+          background: #fff; }
+          .wrapper .wrapper-main .wrapper-left .review-box .comment-box textarea {
+            padding: 10px;
+            resize: none;
+            font-size: 14px;
+            height: 70px;
+            width: 97%;
+            overflow: auto;
+            outline: none;
+            display: block;
+            border: 1px solid #ccc; }
+          .wrapper .wrapper-main .wrapper-left .review-box .comment-box .publish {
+            padding: 5px;
+            height: 25px; }
+            .wrapper .wrapper-main .wrapper-left .review-box .comment-box .publish span {
+              color: #FB242B;
+              font-size: 14px;
+              display: none; }
+            .wrapper .wrapper-main .wrapper-left .review-box .comment-box .publish a {
+              background: #CF3220;
+              font-size: 14px;
+              color: #f2f2f2;
+              padding: 2px 5px;
+              border-radius: 2px;
+              display: inline-block;
+              float: right;
+              cursor: pointer; }
+              .wrapper .wrapper-main .wrapper-left .review-box .comment-box .publish a:active {
+                background: #AF3220; }
+        .wrapper .wrapper-main .wrapper-left .review-box .review-all {
+          margin-top: 20px;
+          padding-bottom: 50px; }
+          .wrapper .wrapper-main .wrapper-left .review-box .review-all .all-tit {
+            height: 30px;
+            line-height: 28px;
+            border-bottom: 1px solid #ccc; }
+            .wrapper .wrapper-main .wrapper-left .review-box .review-all .all-tit p, .wrapper .wrapper-main .wrapper-left .review-box .review-all .all-tit span {
+              display: inline-block; }
+            .wrapper .wrapper-main .wrapper-left .review-box .review-all .all-tit p {
+              font-size: 16px;
+              border-bottom: 2px solid #CF3220; }
+            .wrapper .wrapper-main .wrapper-left .review-box .review-all .all-tit span {
+              float: right; }
+          .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list {
+            margin-top: 20px; }
+            .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list ul {
+              list-style: none; }
+              .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list ul li {
+                width: 100%;
+                border-bottom: 1px solid #ccc;
+                position: relative;
+                padding-left: 40px;
+                box-sizing: border-box;
+                margin-bottom: 20px; }
+                .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list ul li img {
+                  left: 0;
+                  top: 20px;
+                  width: 40px;
+                  height: 40px;
+                  position: absolute; }
+                .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list ul li .post-body {
+                  padding-left: 10px; }
+                  .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list ul li .post-body .post-header {
+                    padding-top: 15px; }
+                    .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list ul li .post-body .post-header .name {
+                      font-weight: bold;
+                      color: #CF3220;
+                      margin-right: 10px; }
+                  .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list ul li .post-body .content {
+                    margin-top: 5px;
+                    color: #2A2A2A;
+                    font-size: 13px; }
+                  .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list ul li .post-body .post-footer {
+                    margin-top: 5px;
+                    padding-bottom: 15px;
+                    color: #888; }
+                    .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list ul li .post-body .post-footer .zan:hover i, .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list ul li .post-body .post-footer .cai:hover i {
+                      color: #CF3220; }
+                    .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list ul li .post-body .post-footer a {
+                      cursor: pointer;
+                      margin-right: 10px; }
+                      .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list ul li .post-body .post-footer a:hover {
+                        color: #555; }
+              .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list ul li:last-child {
+                border: none; }
+            .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list .huifu ul {
+              background: #f9f9f9;
+              padding: 10px; }
+              .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list .huifu ul li {
+                padding: 5px;
+                border-bottom: 1px dashed #ccc;
+                margin-bottom: 0; }
+                .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list .huifu ul li a {
+                  text-decoration: none;
+                  color: #BB242B;
+                  font-weight: bold; }
+                .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list .huifu ul li div {
+                  height: 20px; }
+                  .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list .huifu ul li div .time {
+                    float: right;
+                    margin-right: 10px; }
+                  .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list .huifu ul li div .h-button {
+                    float: right;
+                    cursor: pointer; }
+                    .wrapper .wrapper-main .wrapper-left .review-box .review-all .review-list .huifu ul li div .h-button:hover {
+                      color: #BB242B; }
+          .wrapper .wrapper-main .wrapper-left .review-box .review-all .To-load-more {
+            height: 30px;
+            background: #d2d2d2;
+            line-height: 30px;
+            border-radius: 3px;
+            text-align: center;
+            cursor: pointer;
+            color: #000; }
+            .wrapper .wrapper-main .wrapper-left .review-box .review-all .To-load-more:hover {
+              background: #c2c2c2; }
+
+/*分页样式*/
+.paging-box {
+  text-align: center;
+  padding: 20px 0; }
+  .paging-box #pagination {
+    display: inline-block;
+    vertical-align: middle;
+    *display: inline;
+    zoom: 1; }
+    .paging-box #pagination .prv, .paging-box #pagination .next {
+      width: 60px; }
+    .paging-box #pagination .noClick {
+      color: #ccc;pointer-events: none;cursor: not-allowed }
+      .paging-box #pagination .noClick:hover {
+        color: #ccc;
+        border: 1px solid #ccc;pointer-events: none;cursor: not-allowed;}
+    .paging-box #pagination .current {
+      border: 1px solid #cB242B;
+      background-color: #cB242B;
+      color: #fff; }
+      .paging-box #pagination .current:hover {
+        border: 1px solid #cB242B;
+        background-color: #cB242B;
+        color: #fff; }
+    .paging-box #pagination a {
+      margin: 0 2px 0 2px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      text-decoration: none; }
+      .paging-box #pagination a:hover {
+        border: 1px solid #cB242B;
+        color: #cB242B; }
+  .paging-box #pagination a, .paging-box #pagination i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    color: #7D7D7D;
+    text-align: center;
+    font-size: 10px;
+    padding: 3px 0 2px 0; }
+  .paging-box #pagination i {
+    margin: 0 3px 0 3px; }
+  .paging-box .jumppage {
+    font-size: 14px;
+    color: #666;
+    margin-left: 20px; }
+  .paging-box input {
+    height: 16px;
+    width: 30px;
+    border: 1px solid #d2d2d2;
+    padding: 3px;
+    *vertical-align: middle; }
+    .paging-box input:focus {
+      outline: none; }
+  .paging-box .gopage {
+    padding: 3px 5px;
+    border: 1px solid #d2d2d2;
+    border-radius: 2px;
+    color: #666;
+    cursor: pointer; }
+    .paging-box .gopage:hover {
+      background: #cB242B;
+      color: #fff;
+      border: 1px solid #cB242B; }
+
+/*页脚*/
+footer {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  font-family: '微软雅黑',Tahoma;
+  }
+footer .footer {
+  color: #868686;
+  min-width: 1100px;
+  max-width: 1200px;
+  background: #fff;
+  height: 150px;
+  margin: 0 auto; }
+footer .footer .footer-left {
+  width: 50%;
+  height: 100%;
+  margin-left: 50px;
+  float: left; }
+footer .footer .footer-left .footer-logo {
+  padding-top: 20px; }
+footer .footer .footer-left .flist ul {
+  list-style: none;
+  margin-top: 10px; }
+footer .footer .footer-left .flist ul li {
+  display: inline-block;
+  padding: 0 15px; }
+footer .footer .footer-left .flist ul li a {
+  color: #777;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 13px; }
+footer .footer .footer-left .flist ul li a:hover {
+  color: #cB242B; }
+footer .footer .footer-left .flist ul li:first-child {
+  padding-left: 0; }
+footer .footer .footer-right {
+  padding-left: 50px;
+  width: 30%;
+  float: right; }
+footer .footer .footer-right .rlist {
+  margin-top: 15px;
+  list-style: none; }
+footer .footer .footer-right .rlist li {
+  display: inline-block;
+  padding: 0 15px; }
+footer .footer .footer-right .rlist li a {
+  color: #777;
+  font-size: 20px;
+  text-decoration: none; }
+footer .footer .footer-right .rlist li a span {
+  font-size: 14px; }
+footer .footer .footer-right .rlist li a:hover {
+  color: #cB242B; }
+footer .footer .footer-right .rimg {
+  list-style: none;
+  margin-top: 15px; }
+footer .footer .footer-right .rimg li {
+  display: inline-block;
+  padding: 0 20px; }
+footer .footer .footer-right .rimg li a {
+  color: #868686;
+  text-decoration: none;
+  font-size: 35px; }
+footer .footer .footer-right .rimg li a:hover {
+  color: #cB242B; }
+
+/*list页面filter-list样式*/
+.filter-list {
+  font-size: 13px;
+  color: #4e4e4e;
+  font-weight: bold;  }
+.filter-list .gradeChoose,.filter-list .unionChoose{
+  padding-left: 70px;
+  position: relative;
+  line-height: 24px;
+  display: inline-block;
+  width: 100%;
+}
+.filter-list .gradeChoose h5,.filter-list .unionChoose h5{
+  color: #333;
+  font-size:14px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.filter-list .tags-list{
+  float: left;
+  margin-right: 10px;
+  list-style: none;
+}
+.filter-list .tags-list li{
+  float: left;
+  margin:0 10px 10px 0;
+}
+.filter-list .tags-list li a{
+  display: block;
+  padding: 2px 10px;
+  border-radius: 24px;
+}
+.filter-list ul .none {
+  display: none; }
+.filter-list .tags-list .active {
+  background: #cB242B;
+  color: #fff; }
+.filter-list .tags-list li a img
+{        width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+.filter-list .tags-list a:not(.active):hover {
+  background: #ccc; }
+/*play页面加入收藏和下载css*/
+.mod-handle{
+  position: absolute;
+  width: 270px;
+  height: 32px;
+  bottom: 0;
+  padding: 0 10px;
+  line-height: 32px;
+}
+.mod-handle a{
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial;
+}
+.mod-handle a.liked{
+  color: #cB242B;
+}
+.SeparationLine{
+  color:#fff;
+  display: none;
+}
+.mod-handle .add-collect,.mod-handle .downloadMeta{
+  display: inline;
+  cursor: pointer;
+}
+.mod-handle .downloadMeta{
+  display:none;
+}
+.mod-handle .add-collect a:hover,.mod-handle .downloadMeta a:hover{
+  color: #cB242B;
+}
+.site-container .video-wall .player .details .add-collect{
+  display:none;
+}
+/*# sourceMappingURL=Common.css.map */

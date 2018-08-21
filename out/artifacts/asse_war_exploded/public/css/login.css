@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font: 12px/1.5 Arial, "hiragino sans gb", "microsoft yahei", "simsun", Helvetica, sans-serif;
+  background: url("../images/background.jpg");
+  position: relative; }
+
+.displayNone{
+  display: none;
+}
+.language{
+  float:right;color: #fff;padding:14px 20px;font-size: 14px;
+}
+.language .select{
+  padding: 4px 10px;
+  background: #cb242b;
+}
+.login_main {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -250px;
+  animation: myfirst 1s;
+}
+@keyframes myfirst {
+  from {
+    margin-top: -200px;
+    opacity: 0; }
+  to {
+    margin-top: -250px;
+    opacity: 1; } }
+  .login_main h3, .login_main h5 {
+    text-align: center; }
+  .login_main h3 {
+    font-size: 32px; }
+    .login_main h3 a {
+      color: #f2f2f2;
+      text-decoration: none; }
+  .login_main h5 {
+    font-size: 14px;
+    color: #e2e2e2; }
+  .login_main .border {
+    margin-top: 10px;
+    height: 3px;
+    background: #cB242B; }
+  .login_main .input_box {
+    text-align: center;
+    background: rgba(17, 17, 17, 0.7);
+    height: 300px;
+    padding-top: 30px;
+    position: relative; }
+  .login_main .Mobile, .login_main .password{
+    height: 50px;
+    padding-top: 20px; }
+    .login_main .Mobile span, .login_main .password span,.register_main .input_box .user_name span, .register_main .input_box .password span, .register_main .input_box .password_confirm span, .register_main .input_box .name span, .register_main .input_box .E-mail span, .register_main .input_box .Mobile span ,.register_main .input_box .phone-code span,.register_main .input_box .Email-code span, .find_main .input_box .Mobile span, .find_main .input_box .password span, .find_main .input_box .password_confirm span,.find_main .input_box .phone-code span,.find_main .input_box .Email-code span{
+      display: inline-block;
+      font-size: 18px;
+      background: #F5F6F8;
+      color: #aaa;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      vertical-align: middle; }
+    .login_main .Mobile input, .login_main .password input,.register_main .input_box .user_name input, .register_main .input_box .password input, .register_main .input_box .password_confirm input, .register_main .input_box .name input, .register_main .input_box .E-mail input, .register_main .input_box .Mobile input,.register_main .input_box .phone-code input,.register_main .input_box .Email-code input , .find_main .input_box .Mobile input, .find_main .input_box .password input, .find_main .input_box .password_confirm input,.find_main .input_box .phone-code input,.find_main .input_box .Email-code input {
+      outline: none;
+      box-sizing: border-box;
+      padding-left: 10px;
+      font-size: 18px;
+      color: #555;
+      width:298px;
+      height: 40px;
+      border: none;
+      display: inline-block;
+      margin-left: -3px;
+      vertical-align: middle; }
+      .login_main .Mobile input:focus, .login_main .password input:focus ,.find_main .password input:focus {
+        outline: none;
+        transition: transform .15s ease;
+        transform: scale(1.07); }
+    .login_main .input_box .check {
+      /*margin-top: 10px;
+      height: 20px;
+      text-indent: -200px;*/
+      margin: 10px auto;
+      height: 20px;
+      text-indent: -254px;
+      width: 340px;}
+    .login_main .input_box .check input {
+      width: 16px;
+      height: 16px;
+      vertical-align: middle; }
+    .login_main .input_box .check span {
+      vertical-align: middle;
+      font-size: 14px;
+      color: #f2f2f2;
+      margin-left: 5px; }
+  .login_main .login,.register_main .register,.find_main .confirmFind  {
+    background: #cB242B;
+    display: block;
+    color: #f5f5f5;
+    border: none;
+    width: 340px;
+    margin: 20px auto;
+    text-decoration: none;
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px; }
+    .login_main .login:hover,.register_main .input_box .reg .register:hover,.find_main .input_box .get .confirmFind:hover {
+      background: #EB242B;
+      color: #fff; }
+  .login_main .go_register {
+    color: #c2c2c2;
+    display: inline-block;
+    margin-left: 80px; }
+.login_main .info,.find_main .info,.register_main .input_box .info{
+  position: absolute;
+  background: #BB242B;
+  top: 1px;
+  padding: 0 5px;
+  color: #f2f2f2;
+  font-size: 14px;
+  margin-left: 0;
+  height: 30px;
+  line-height: 30px;  display: none;}
+    .login_main .info .close,.find_main .info .close {
+      margin-left: 30px;
+      cursor: pointer; }
+  .login_main .succeed,.find_main .succeed {
+    background: #bb242b;
+    position: absolute;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -62px;
+    margin-top: -50px;
+    display: none;
+    z-index: 999; }
+
+.jihuo {
+  color: #c2c2c2;
+  margin-left: 130px;
+  cursor: pointer; }
+
+.active {
+  display: none;
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  background: #111;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -200px; }
+  .active .j_su {
+    color: #f2f2f2;
+    background: #cB242B;
+    font-size: 14px;
+    position: absolute;
+    padding: 5px 10px;
+    left: 150px;
+    top: 50px;
+    z-index: 999;
+    display: none; }
+  .active .j_info {
+    color: #f2f2f2;
+    background: #cB242B;
+    font-size: 14px;
+    position: absolute;
+    padding: 5px 10px;
+    left: 30px;
+    top: 10px;
+    display: none; }
+  .active .userName {
+    position: relative;
+    height: 50px;
+    padding-top: 45px; }
+    .active .userName span {
+      display: inline-block;
+      font-size: 18px;
+      background: #a2a2a2;
+      color: #888;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      vertical-align: middle; }
+    .active .userName input {
+      outline: none;
+      box-sizing: border-box;
+      padding: 10px;
+      font-size: 18px;
+      color: #555;
+      width: 300px;
+      height: 40px;
+      border: none;
+      display: inline-block;
+      margin-left: -3px;
+      vertical-align: middle; }
+      .active .userName input:focus {
+        outline: none;
+        transition: transform .15s ease;
+        transform: scale(1.07); }
+  .active .jihuo {
+    display: inline-block;
+    background: #cB242B;
+    color: #f5f5f5;
+    border: none;
+    padding: 5px 30px 5px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 0px; }
+    .active .jihuo:hover {
+      background: #EB242B;
+      color: #fff; }
+  .active .close {
+    font-size: 20px;
+    font-weight: bold;
+    color: #BB242B;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer; }
+    .active .close:hover {
+      color: #EB242B; }
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  color: #d2d2d2;
+  font-size: 14px;
+  width: 100%;
+  padding-bottom: 10px; }
+
+.register_main {
+  position: absolute;
+  width: 500px;
+  height: 550px;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -280px;
+  animation: my 1s; }
+@-moz-keyframes my {
+  from {
+    margin-top: -350px;
+    opacity: 0; }
+  to {
+    margin-top: -280px;
+    opacity: 1; } }
+@-webkit-keyframes my {
+  from {
+    margin-top: -350px;
+    opacity: 0; }
+  to {
+    margin-top: -280px;
+    opacity: 1; } }
+@-o-keyframes my {
+  from {
+    margin-top: -350px;
+    opacity: 0; }
+  to {
+    margin-top: -280px;
+    opacity: 1; } }
+@-ms-keyframes my {
+  from {
+    margin-top: -350px;
+    opacity: 0; }
+  to {
+    margin-top: -280px;
+    opacity: 1; } }
+@keyframes my {
+  from {
+    margin-top: -350px;
+    opacity: 0; }
+  to {
+    margin-top: -280px;
+    opacity: 1; } }
+  .register_main h3, .register_main h5,.find_main h3,.find_main h5 {
+    text-align: center; }
+  .register_main h3,.find_main h3 {
+    font-size: 32px; }
+    .register_main h3 a,.find_main h3 a {
+      color: #f2f2f2;
+      text-decoration: none; }
+  .register_main h5 ,.find_main h5{
+    font-size: 14px;
+    color: #e2e2e2; }
+  .register_main .border,.find_main .border {
+    margin-top: 10px;
+    height: 3px;
+    background: #cB242B; }
+  .register_main .input_box {
+    text-align: center;
+    background: rgba(17, 17, 17, 0.7);
+    height: 435px;
+    position: relative;
+    padding-top: 20px; }
+  .login_main .Mobile, .login_main .password,.register_main .input_box .user_name, .register_main .input_box .password, .register_main .input_box .password_confirm, .register_main .input_box .name, .register_main .input_box .E-mail, .register_main .input_box .Mobile,.register_main .input_box .phone-code,.register_main .input_box .Email-code, .find_main .input_box .Mobile, .find_main .input_box .password, .find_main .input_box .password_confirm,.find_main .input_box .phone-code,.find_main .input_box .Email-code{
+      padding-top: 15px;
+      height: 40px;
+      width: 340px;
+      line-height: 40px;
+      position: relative;
+      margin: auto;}
+      .register_main .input_box .user_name .dui, .register_main .input_box .password .dui, .register_main .input_box .password_confirm .dui, .register_main .input_box .name .dui, .register_main .input_box .E-mail .dui, .register_main .input_box .Mobile .dui,.register_main .input_box .phone-code .dui,.register_main .input_box .Email-code .dui,.find_main .input_box .Email-code .dui {
+        display: inline-block;
+        font-style: normal;
+        color: limegreen;
+        position: absolute;
+        font-size: 20px;
+        right: 50px;
+        display: none; }
+        .register_main .input_box .user_name input:focus, .register_main .input_box .password input:focus, .register_main .input_box .password_confirm input:focus, .register_main .input_box .name input:focus, .register_main .input_box .E-mail input:focus, .register_main .input_box .Mobile input:focus {
+          outline: none;
+          transition: transform .15s ease;
+          transform: scale(1.05); }
+        .register_main .input_box .phone-code .code-btn,.register_main .input_box .Email-code .code-btn, .find_main .input_box .phone-code .code-btn,.find_main .input_box .Email-code .code-btn{
+          color: #fff;
+          /*font-size: 13px;
+          background: #cb242b;
+          margin-right:6px;
+          padding: 10px 0;
+          display: inline-block;
+          width: 87px;*/
+          color: #fff;
+          font-size: 13px;
+          background: #cb242b;
+          margin-left: 5px;
+          display: block;
+          width: 88px;
+          height: 41px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          float: right;
+        }
+      .register_main .input_box .info .close {
+        margin-left: 30px;
+        cursor: pointer; }
+    .register_main .input_box .check {
+      /*margin-top: 10px;
+      height: 20px;
+      text-indent: -200px; */
+      margin: 10px auto;
+      height: 20px;
+      text-indent: -137px;
+      width: 340px; }
+      .register_main .input_box .check input {
+        width: 16px;
+        height: 16px;
+        vertical-align: middle; }
+      .register_main .input_box .check span {
+        vertical-align: middle;
+        font-size: 14px;
+        color: #f2f2f2;
+        margin-left: 5px; }
+    .register_main .input_box .reg,.find_main .input_box .get {
+      margin-top: 20px; }
+      .register_main .input_box .reg .go_login{
+        color: #f2f2f2;
+        margin-left: 120px; }
+    .register_main .input_box .succeed {
+      background: #bb242b;
+      position: absolute;
+      padding: 10px 30px;
+      color: #fff;
+      font-size: 16px;
+      top: 50%;
+      left: 50%;
+      margin-left: -62px;
+      margin-top: -50px;
+      display: none;
+      z-index: 999; }
+  .find_main {
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -280px;
+    animation: my 1s; }
+  .find_main .input_box {
+    text-align: center;
+    background: rgba(17, 17, 17, 0.7);
+    height: 350px;
+    position: relative;
+    padding-top: 20px; }
+
+/*# sourceMappingURL=login.css.map */

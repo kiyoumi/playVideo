@@ -1,0 +1,256 @@
+strong {
+    font-weight: normal;
+}
+.no{
+    display: none;
+}
+.payB{
+    font-size: 24px;
+    color: #ff6e1e;
+}
+ul,
+ol {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.block{
+    display: block!important;
+}
+.package-list {
+    width: 1100px;
+    margin: 20px auto;
+    .package-tit {
+        font-size: 20px;
+        color:#555;
+        .biao{
+            float: left;
+            width: 5px;
+            height: 30px;
+            background: #AB242B;
+        }
+        p{
+            margin-left: 10px;
+        }
+        .border1{
+            content: '';
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            z-index: 1;
+            background: -webkit-linear-gradient(left,rgba(186,186,186,0) 0,rgba(186,186,186,1) 0%,rgba(186,186,186,1) 80%,rgba(186,186,186,0) 100%);
+        }
+    }
+    .package {
+        margin-top: 20px;
+        ul li {
+            width: 200px;
+            height: 190px;
+            display: inline-block;
+            margin-left: 30px;
+            margin-right: 40px;
+            margin-bottom: 20px;
+            a {
+                padding: 2px;
+                border: 1px solid #b2b2b2;
+                box-sizing: content-box;
+                text-decoration: none;
+                line-height: 30px;
+                text-align: center;
+                display: block;
+                width: 200px;
+                height: 190px;
+                font-size: 16px;
+                color: #cB242B;
+                font-weight: bold;
+                img{
+                    width: 200px;
+                    height: 150px;
+                }
+                p {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 14px;
+                    color: #333;
+
+                    strong {
+                        font-size: 24px;
+                        color: #ff6e1e;
+                    }
+                }
+            }
+            
+        }
+        .selected a {
+            padding: 0;
+            border: 3px solid #56a900;
+        };
+    }
+}
+.payType-list {
+    width: 1100px;
+    margin: 20px auto;
+    .payType-tit {
+        font-size: 20px;
+        color:#555;
+        .biao{
+            float: left;
+            width: 5px;
+            height: 30px;
+            background: #AB242B;
+        }
+        p{
+            margin-left: 10px;
+        }
+        .border1{
+            content: '';
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            z-index: 1;
+            background: -webkit-linear-gradient(left,rgba(186,186,186,0) 0,rgba(186,186,186,1) 0%,rgba(186,186,186,1) 80%,rgba(186,186,186,0) 100%);
+        }
+    }
+    .payType {
+        margin-top: 20px;
+        ul li {
+            width: 120px;
+            height: 42px;
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            a {
+                padding: 1px;
+                border: 2px solid #b2b2b2;
+                text-decoration: none;
+                line-height: 30px;
+                text-align: center;
+                display: block;
+                width: 116px;
+                height: 40px;
+                font-size: 16px;
+                color: #cB242B;
+                font-weight: bold;
+                p {
+                    padding-top: 10px;
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 14px;
+                    color: #333;
+                    strong {
+                        font-size: 24px;
+                        color: #ff6e1e;
+                    }
+                }
+            }
+            
+        }
+        .selected a {
+            padding: 0;
+            border: 3px solid #56a900;
+        };
+    }
+    .payTypeList{
+        display: none;
+        .selected a{
+            background: #56a900;
+            p{
+                color:#fff;
+            }
+        }
+    }
+}
+.productContent {
+    width: 1100px;
+    margin: 20px auto;
+    .productContent-tit {
+        font-size: 20px;
+        color:#555;
+        .biao{
+            float: left;
+            width: 5px;
+            height: 30px;
+            background: #AB242B;
+        }
+        p{
+            margin-left: 10px;
+        }
+        .border1{
+            content: '';
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            z-index: 1;
+            background: -webkit-linear-gradient(left,rgba(186,186,186,0) 0,rgba(186,186,186,1) 0%,rgba(186,186,186,1) 80%,rgba(186,186,186,0) 100%);
+        }
+    }
+    .productCot {
+        margin-top: 20px;
+        padding-left: 20px;
+        font-size: 16px;
+        strong {
+            font-size: 24px;
+            color: #ff6e1e;
+        }
+    }
+}
+//VIP特权
+.vipC {
+    width: 1100px;
+    margin: 20px auto;
+    .vipC-tit {
+        font-size: 20px;
+        color:#555;
+        .biao{
+            float: left;
+            width: 5px;
+            height: 30px;
+            background: #AB242B;
+        }
+        p{
+            margin-left: 10px;
+        }
+        .border1{
+            content: '';
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            z-index: 1;
+            background: -webkit-linear-gradient(left,rgba(186,186,186,0) 0,rgba(186,186,186,1) 0%,rgba(186,186,186,1) 80%,rgba(186,186,186,0) 100%);
+        }
+    }
+    .vipPrivilege {
+        margin-top: 20px;
+        padding-left: 20px;
+        ul li {
+            width: 150px;
+            height: 142px;
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+.openBtn {
+    text-decoration: none;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 30px;
+    border-radius: 3px;
+    background: #5aa700;
+    font-size: 16px;
+    color: #fff;
+    margin: 15px 0 30px 80%;
+}

@@ -1,0 +1,231 @@
+.VIP-remain-box {
+  padding: 0px 30px; }
+  .VIP-remain-box p {
+    font-size: 22px; }
+  .VIP-remain-box .vip-info {
+    display: inline-block;
+    padding-top: 15px;
+    font-size: 16px; }
+  .VIP-remain-box .date {
+    color: #cB242B;
+    font-weight: bold;
+    font-size: 18px; }
+  .VIP-remain-box .chongzhi {
+    float: right; }
+    .VIP-remain-box .chongzhi a {
+      text-decoration: none;
+      background: #CB242B;
+      color: #f2f2f2;
+      padding: 5px 10px;
+      border-radius: 2px;
+      font-size: 16px; }
+      .VIP-remain-box .chongzhi a:hover {
+        background: #DB242B;
+        color: #fff; }
+.main-content .moneybag{
+  height: 43px;
+  padding: 16px 15px 0 22px;
+  margin-bottom: 33px;
+  font-size: 16px;
+  color: #2a2a2a;
+  background: #fff1e6;
+}
+.expense-calendar {
+  padding: 40px 30px; }
+  .expense-calendar .tit p {
+    font-size: 22px; }
+  .expense-calendar .expense-table table {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e8e8e8;
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: table; }
+    .expense-calendar .expense-table table thead, .expense-calendar .expense-table table tbody {
+      display: table-header-group;
+      vertical-align: middle;
+      border-color: inherit; }
+      .expense-calendar .expense-table table thead th, .expense-calendar .expense-table table thead td, .expense-calendar .expense-table table tbody th, .expense-calendar .expense-table table tbody td {
+        padding: 20px;
+        line-height: 20px;
+        color: #444;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        background-color: #fafafa;
+        border: 1px solid #e8e8e8; }
+
+
+
+      a{text-decoration: none;}
+  .displayNone{
+    display: none;
+  }
+  .fl{
+    float: left;
+  }
+  .fr{
+    float: right;
+  }
+  .setting-wrap{
+    padding: 0 40px;
+  }
+  .setting-wrap .common-title{
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .setting-wrap .common-title a{
+    color: #93999f;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .setting-wrap .common-title a i{
+    color:#cb242b;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+.line {
+  height: 1px;
+  background-color: #d0d6d9;
+  margin-top: 12px;
+}
+.info-wapper {
+  margin: 24px auto 24px 40px;
+}
+.info-box {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.info-box label {
+  width: 120px;
+  line-height: 20px;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #f3f5f7;
+  color: #07111b;
+  font-weight: 700;
+}
+ .info-box div {
+  width: 580px;
+  margin-left: 8px;
+  line-height: 20px;
+  padding: 20px 0 20px 22px;
+  border-bottom: 1px solid #d9dde1;
+}
+
+ .edit-info{
+   width: 100%;height: 100%;background: rgba(7,17,27,0.5);left: 0;position: absolute;top: 0;z-index: 199;
+ }
+.edit-info .editP{
+  z-index: 902;
+  visibility: visible;
+  left: 50%;
+  margin-left: -210px;
+  top: 120px;
+  width: 420px;
+  padding: 26px 30px 46px 30px;
+  opacity: 1;
+  position: fixed;
+  background: #fff;
+}
+ .edit-info .titleT{
+   font-size: 18px;
+   font-weight: bold;
+   color: #07111b;
+   padding:16px 0 30px;
+ }
+ .edit-info .top a{
+   font-size: 24px;
+   position: absolute;
+   right: 32px;
+   top: 24px;
+   color: #93999f;
+   display: block;
+ }
+ .edit-info .close i{
+   color: #93999f;
+ }
+ .edit-info .js-wapper-form{
+   display: inline-block;
+ }
+ .edit-info .form-group{
+   overflow: hidden;
+ }
+.edit-info .control-label{
+  text-align: right;
+  margin-bottom: 0;
+  font-weight: bold;
+  padding-top: 7px;
+  width: 100px!important;
+  float: left;
+}
+ .edit-info .control-input{
+   float: left;
+   padding: 0 5px;
+   box-sizing: border-box;
+   width: 298px!important;
+ }
+ .edit-info .form-control{
+   display: block;
+   width: 100%;
+   height: 34px;
+   padding: 6px 12px;
+   font-size: 14px;
+   line-height: 1.42857143;
+   color: #787d82;
+   background-color: #fff;
+   background-image: none;
+   border: 1px solid #ccc;
+   border-radius: 2px;
+   box-sizing: border-box;
+ }
+.edit-info .rlf-tip-wrap {
+  height: 24px!important;
+  line-height: 24px!important;
+}
+.edit-info .profile-address select{
+  display: inline-block;
+  margin-right: 10px;
+  width: 84px;
+  padding: 6px 0;
+}
+.edit-info .profile-address select.mr0{
+  margin-right: 0;
+}
+.edit-info .wlfg-wrap .rlf-radio-group label {
+  margin-right: 26px;
+}
+.edit-info .wlfg-wrap .rlf-radio-group input[type=radio] {
+  margin-right: 10px;
+}
+.rlf-radio-group{
+  margin-top: 9px;
+}
+.edit-info .wlfg-wrap.clearfix .control-input a{
+  color: #f2f2f2;
+  padding: 9px 25px;
+  border-radius: 5px;
+}
+a#profile-submit{
+  background: #e30112;
+  margin-right: 20px;
+}
+a#cancel{
+  background: #aaa;
+}
+.tips{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -56px;
+  margin-top: -20px;
+  color: #fff;
+  font-size: 16px;
+  background: #ee4c83;
+  padding: 9px 24px;
+  border-radius: 8px;
+}
+/*# sourceMappingURL=my-center.css.map */

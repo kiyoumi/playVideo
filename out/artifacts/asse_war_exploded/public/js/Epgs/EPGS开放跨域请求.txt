@@ -1,0 +1,13 @@
+开放跨域原理：（在返回的header加上下面三个参数）
+"Access-Control-Allow-Origin"："*"
+"Access-Control-Allow-Methods"："POST, PUT, GET, OPTIONS, DELETE"
+"Access-Control-Allow-Headers"： "origin, authorization, content-type"
+
+在SpringMVC中使用拦截器进行实现
+并在web.xml中注册拦截器
+<!-- 跨域请求 -->
+    <filter>  
+        <filter-name>CORSFilter</filter-name>  
+        <filter-class>net.sunniwell.epgs.filter.CORSFilter</filter-class>  
+        <!-- <async-supported>true</async-supported> Servlet3.0的异步支持-->   
+    </filter>
